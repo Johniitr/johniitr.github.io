@@ -1,9 +1,10 @@
 
-title: "Your Name – Research Portfolio"
+title: "John Mohd Wani – Research Portfolio"
 description: "Personal academic website built with Jekyll and Minimal Mistakes."
 url: "https://yourusername.github.io"
 baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
@@ -12,7 +13,7 @@ plugins:
   - jekyll-seo-tag
 
 author:
-  name   : "Your Name"
+  name   : "John Mohd Wani"
   avatar : "/assets/images/avatar.png"
   bio    : "Researcher in Earth System Science."
   location: "Your University"
