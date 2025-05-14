@@ -1,0 +1,31 @@
+
+title: "Your Name – Research Portfolio"
+description: "Personal academic website built with Jekyll and Minimal Mistakes."
+url: "https://yourusername.github.io"
+baseurl: ""
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name   : "Your Name"
+  avatar : "/assets/images/avatar.png"
+  bio    : "Researcher in Earth System Science."
+  location: "Your University"
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=XXXX"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/yourusername"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/yourhandle"
+
+paginate: 5
+paginate_path: /page:num/
