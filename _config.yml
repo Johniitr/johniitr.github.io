@@ -14,15 +14,15 @@ plugins:
 
 author:
   name   : "John Mohd Wani"
-  avatar : "/assets/images/avatar.png"
+  avatar : "/assets/images/WaniJohn.jpg"
   bio    : "Researcher in Earth System Science."
   location: "Your University"
   links:
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=XXXX"
+      url: "https://scholar.google.com/citations?user=2K-7VUMAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://twitter.com/yourhandle"
+      url: "https://github.com/Johniitr"
 paginate: 5
 paginate_path: /page:num/
