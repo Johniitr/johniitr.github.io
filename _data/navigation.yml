@@ -4,6 +4,6 @@ main:
   - title: "About"
     url: "/about/"
   - title: "CV"
-    url: "/cv/"
+    url: "/assets/documents/john_wani_vitae_cv.pdf"
   - title: "Blog"
     url: "/year-archive/"
