@@ -1,7 +1,7 @@
 
 title: "John Mohd Wani – Research Portfolio"
 description: "Personal academic website built with Jekyll and Minimal Mistakes."
-url: "https://yourusername.github.io"
+url: "https://johniitr.github.io"
 baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
@@ -23,10 +23,6 @@ author:
       url: "https://scholar.google.com/citations?user=XXXX"
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/yourusername"
-    - label: "Twitter"
-      icon: "fab fa-twitter"
       url: "https://twitter.com/yourhandle"
-
 paginate: 5
 paginate_path: /page:num/
