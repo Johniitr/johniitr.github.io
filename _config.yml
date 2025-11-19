@@ -14,7 +14,7 @@ plugins:
 author:
   name   : "John Mohd Wani"
   avatar : "/assets/images/WaniJohn.jpg"
-  bio    : "Cryosphere Researcher."
+  bio    : "Cryosphere Researcher"
 
   links:
     - label: "Google Scholar"
