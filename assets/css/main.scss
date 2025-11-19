@@ -1,0 +1,8 @@
+// In assets/css/main.scss
+
+---
+# Front matter required for Jekyll
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Imports the base skin first
+@import "custom"; // Imports your custom colors last
