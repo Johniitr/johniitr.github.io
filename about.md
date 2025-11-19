@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-I am a researcher focused on cryosphere, particularly **snow** and **permafrost processes**. This website hosts my work, blog, and updates. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
+I am an early career researcher focused on cryosphere, particularly **snow** and **permafrost processes**. This website hosts my work, blog, and updates. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
 
 <div style="display: flex; gap: 10px;">
   <a href="/publications/" class="btn btn--primary">View Publications</a>
@@ -24,4 +24,4 @@ My main research interests include:
 -   Snow Processes
 -   Hydro-meteorological monitoring
 
-To understand these processes, I use computer models and other tools like remote sensing, geographic information systems (GIS), data science (R programming language) together with field trips.
+To understand these processes, I use computer models (**[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)**) and other tools like remote sensing, geographic information systems (GIS), data science (R programming language) together with field trips.
