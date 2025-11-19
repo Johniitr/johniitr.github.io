@@ -3,14 +3,13 @@ description: "Personal academic website built with Jekyll and Minimal Mistakes."
 url: "https://johniitr.github.io"
 baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "air"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
-theme_skin: "switcher"
 author:
   name   : "John Mohd Wani"
   avatar : "/assets/images/WaniJohn.jpg"
