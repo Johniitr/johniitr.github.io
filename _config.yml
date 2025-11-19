@@ -29,5 +29,8 @@ author:
     - label: "University of Trento" 
       icon: "fas fa-university" 
       url: "https://www.centro3a.unitn.it/en" 
+    - label: "ResearchGate"
+      icon: "fab fa-researchgate" 
+      url: "https://www.researchgate.net/profile/John-Wani-2?ev=hdr_xprf"
 paginate: 5
 paginate_path: /page:num/
