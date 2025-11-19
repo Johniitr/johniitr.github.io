@@ -23,5 +23,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Johniitr"
+    - label: "University of Trento" # NEW LINK TITLE
+      icon: "fas fa-university" # ICON FOR UNIVERSITY/ACADEMIA
+      url: "https://www.centro3a.unitn.it/en" #
 paginate: 5
 paginate_path: /page:num/
