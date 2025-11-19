@@ -6,3 +6,16 @@ $primary-color: #0d47a1; // A dark blue for buttons
 // ---
 // Optional: Override button color for a cleaner look
 // $btn-primary-color: $primary-color;
+/* Custom CSS to increase profile picture size */
+.author__avatar img {
+  /* Increase the maximum size of the image */
+  max-width: 150px; 
+  
+  /* Optionally adjust the margin below the image if needed */
+  margin-bottom: 0.5em; 
+}
+
+/* Ensure the container around the image is wide enough */
+.author__avatar {
+  max-width: 160px; /* Should be slightly larger than the max-width of the image */
+}
