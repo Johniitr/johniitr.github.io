@@ -2,7 +2,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /pages/about/
 author_profile: true
 ---
 
