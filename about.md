@@ -10,6 +10,7 @@ I am a researcher focused on cryosphere, particularly **snow** and **permafrost 
 <div style="display: flex; gap: 10px;">
   <a href="/publications/" class="btn btn--primary">View Publications</a>
   <a href="/assets/documents/john_wani_vitae_cv.pdf" class="btn btn--info">Download CV</a>
+  <a href="/contact/" class="btn btn--primary">Contact Me</a>
 </div>
 
 ---
