@@ -22,10 +22,20 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ---
 
-## Latest News
+## Latest Research Updates
 
-* **Nov 2025:** 📝 Published a new blog post: [**Alps are losing snow**](/year-archive/) — A look at the recent winter trends in the Po River District.
-* **Oct 2025:** Presented my findings on *Impact of forest disturbances on snow dynamics* at the **XII IAHS 2025, Roorkee, India**.
-* **Sept 2025:** Presented my findings on *Three decades of snow water equivalent dynamics in the Po River
-Basin* at the **IMC 2025, Innsbruck, Austria**.. [Read more](/publications/).
+### Recent Publications and Presentations
+
+* **Oct 2025:** 🎤 Presented findings on *Impact of forest disturbances on snow dynamics* at the **XII IAHS 2025, Roorkee, India**.
+* **Sept 2025:** 🎤 Presented findings on *Three decades of snow water equivalent dynamics in the Po River Basin* at the **IMC 2025, Innsbruck, Austria**. [Read more](/publications/).
+
+### Latest Blog Posts
+
+{% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
+
+{% for post in posts %}
+* **{{ post.date | date: "%b %-d, %Y" }}:** 📝 [**{{ post.title }}**]({{ post.url | relative_url }})
+{% endfor %}
+
+* **[View all posts in the Research Blog →](/year-archive/)**
 
