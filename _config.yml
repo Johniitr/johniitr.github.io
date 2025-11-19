@@ -15,7 +15,7 @@ author:
   name   : "John Mohd Wani"
   avatar : "/assets/images/WaniJohn.jpg"
   bio    : "Researcher in Earth System Science."
-  location: "University of Trento, Italy"
+
   links:
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
@@ -23,8 +23,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Johniitr"
-    - label: "University of Trento" # NEW LINK TITLE
-      icon: "fas fa-university" # ICON FOR UNIVERSITY/ACADEMIA
-      url: "https://www.centro3a.unitn.it/en" #
+    - label: "University of Trento" 
+      icon: "fas fa-university" 
+      url: "https://www.centro3a.unitn.it/en" 
 paginate: 5
 paginate_path: /page:num/
