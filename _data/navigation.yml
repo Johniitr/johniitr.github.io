@@ -2,7 +2,7 @@ main:
   - title: "Home"
     url: "/"
   - title: "About"
-    url: "/about/"
+    url: "/pages/about/"
   - title: "CV"
     url: "https://johniitr.github.io/assets/documents/john_wani_vitae_cv.pdf"
   - title: "Publications"    

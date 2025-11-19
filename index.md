@@ -3,7 +3,6 @@ layout: home
 author_profile: true
 ---
 
-# Welcome.
 
 I am **John Mohd Wani**, a researcher specializing in **Cryosphere Science**. My work focuses on Alpine Hydrology, Mountain Permafrost, and Snow Modeling.
 
