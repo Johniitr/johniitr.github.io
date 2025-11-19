@@ -1,4 +1,4 @@
-title: "John Mohd Wani – Research Portfolio"
+title: "John Mohd Wani"
 description: "Personal academic website built with Jekyll and Minimal Mistakes."
 url: "https://johniitr.github.io"
 baseurl: ""
@@ -14,7 +14,7 @@ plugins:
 author:
   name   : "John Mohd Wani"
   avatar : "/assets/images/WaniJohn.jpg"
-  bio    : "Researcher in Earth System Science."
+  bio    : "Cryosphere Researcher."
 
   links:
     - label: "Google Scholar"
@@ -26,11 +26,11 @@ author:
     - label: "Orcid" 
       icon: "fab fa-orcid" 
       url: "https://orcid.org/0000-0002-9635-0931" 
-    - label: "University of Trento" 
-      icon: "fas fa-university" 
-      url: "https://www.centro3a.unitn.it/en" 
     - label: "ResearchGate"
       icon: "fab fa-researchgate" 
       url: "https://www.researchgate.net/profile/John-Wani-2?ev=hdr_xprf"
+    - label: "University of Trento" 
+      icon: "fas fa-university" 
+      url: "https://www.centro3a.unitn.it/en" 
 paginate: 5
 paginate_path: /page:num/

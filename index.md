@@ -4,9 +4,9 @@ author_profile: true
 ---
 
 
-I am **John Mohd Wani**, a researcher specializing in **Cryosphere Science**. My work focuses on Alpine Hydrology, Mountain Permafrost, and Snow Modeling.
+I am **John Mohd Wani**, a researcher specializing in **Cryosphere Science**. My work focuses on Mountain Permafrost and its modelling, and Snow Hydrology.
 
-I utilize physically-based models to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
+I utilize physically-based models (GEOtop/GEOframe)to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
 
 <div style="display: flex; gap: 10px;">
   <a href="/publications/" class="btn btn--primary">View Publications</a>
