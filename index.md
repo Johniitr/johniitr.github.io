@@ -6,15 +6,6 @@ author_profile: true
 
 I am **John Mohd Wani**, an early career researcher specializing in **Cryosphere Science**. My research addresses the fundamental challenge of quantifying and predicting the response of the cryosphere (permafrost, snow) to climate change and its impact on water resources and natural hazards. My main research interests include Mountain Permafrost and its modelling, Snow Hydrology, watershed modelling, and climate change induced natural hazards.
 
-I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
-
-<div style="display: flex; gap: 10px;">
-  <a href="/publications/" class="btn btn--primary">View Publications</a>
-  <a href="/assets/documents/john_wani_vitae_cv.pdf" class="btn btn--info">Download CV</a>
-</div>
-
----
-
 ## Research Focus
 
 ### **1. Model development**
