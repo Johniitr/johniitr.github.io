@@ -1,4 +1,4 @@
-# John Mohd Wani | Research Portfolio
+# Personal website
 
 A personal academic website built using Jekyll and the Minimal Mistakes theme, hosted on GitHub Pages.
 
