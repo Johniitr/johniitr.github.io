@@ -34,34 +34,27 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ---
 
-## 📢 Latest Updates
+## 📢 Latest Research Updates
 
-<div class="grid__wrapper">
+### Recent Presentations
 
-  <div class="grid__item">
-    <h3>🎤 Recent Presentations</h3>
-    <ul>
-      <li>
-        <strong>Oct 2025:</strong> Presented findings on <em>Impact of forest disturbances</em> at <strong>XII IAHS 2025</strong>.
-      </li>
-      <li>
-        <strong>Sept 2025:</strong> Presented findings on <em>Po River Basin Snow Dynamics</em> at <strong>IMC 2025</strong>. <a href="/publications/">[Read more]</a>
-      </li>
-    </ul>
-  </div>
+* **Oct 2025:** Presented findings on *Impact of forest disturbances on snow dynamics* at the **XII IAHS 2025, Roorkee, India**.
+* **Sept 2025:** Presented findings on *Three decades of snow water equivalent dynamics in the Po River Basin* at the **IMC 2025, Innsbruck, Austria**. [Read more](/publications/).
 
-  <div class="grid__item">
-    <h3>📝 From the Blog</h3>
-    <ul>
-      {% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
-      {% for post in posts %}
-      <li>
-        <strong>{{ post.date | date: "%b %Y" }}:</strong> <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    <p><a href="/year-archive/" class="btn btn--info btn--small">View All Posts</a></p>
-  </div>
+### From the Blog
 
+{% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
+
+{% for post in posts %}
+<div class="list__item">
+  <article class="archive__item">
+    <p class="archive__item-excerpt" itemprop="description">
+      <strong>{{ post.date | date: "%b %Y" }}:</strong> <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
+    </p>
+  </article>
 </div>
+{% endfor %}
 
+<p style="margin-top: 20px;">
+  <a href="/year-archive/" class="btn btn--info">View All Posts</a>
+</p>
