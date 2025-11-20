@@ -1,6 +1,20 @@
 ---
-layout: home
+layout: single   # <--- CHANGED: 'single' allows the right sidebar
 author_profile: true
+title: "John Mohd Wani" # Required for single layout to look good
+
+# 1. THE HEADER PHOTO CONFIGURATION
+header:
+  overlay_image: /assets/images/IMG_1742.jpg # Replace with your file name
+  overlay_filter: 0.5 # Darkens image (0.0 to 1.0) so white text is readable
+  caption: "Photo credit: [**John Wani**]()"
+  actions: # Optional: Add a button on top of the photo
+    - label: "Download CV"
+      url: "/assets/documents/john_wani_vitae_cv.pdf"
+
+# 2. THE RIGHT SIDEBAR CONFIGURATION
+sidebar:
+  nav: "right_sidebar" # We will create this "menu" in the next step
 ---
 
 
@@ -22,20 +36,34 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ---
 
-## Latest Research Updates
+## 📢 Latest Updates
 
-### Recent Publications and Presentations
+<div class="grid__wrapper">
 
-* **Oct 2025:** Presented findings on *Impact of forest disturbances on snow dynamics* at the **XII IAHS 2025, Roorkee, India**.
-* **Sept 2025:** Presented findings on *Three decades of snow water equivalent dynamics in the Po River Basin* at the **IMC 2025, Innsbruck, Austria**. [Read more](/publications/).
+  <div class="grid__item">
+    <h3>🎤 Recent Presentations</h3>
+    <ul>
+      <li>
+        <strong>Oct 2025:</strong> Presented findings on <em>Impact of forest disturbances on snow dynamics</em> at the <strong>XII IAHS 2025, Roorkee, India</strong>.
+      </li>
+      <li>
+        <strong>Sept 2025:</strong> Presented findings on <em>Three decades of snow water equivalent dynamics</em> at the <strong>IMC 2025, Innsbruck, Austria</strong>. <a href="/publications/">[Read more]</a>
+      </li>
+    </ul>
+  </div>
 
-### Latest Blog Posts
+  <div class="grid__item">
+    <h3>📝 From the Blog</h3>
+    <ul>
+      {% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
+      {% for post in posts %}
+      <li>
+        <strong>{{ post.date | date: "%b %Y" }}:</strong> <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="/year-archive/" class="btn btn--info btn--small">View All Posts</a></p>
+  </div>
 
-{% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
-
-{% for post in posts %}
-* **{{ post.date | date: "%b %-d, %Y" }}:** [**{{ post.title }}**]({{ post.url | relative_url }})
-{% endfor %}
-
-* **[View all posts in the Research Blog →](/year-archive/)**
+</div>
 

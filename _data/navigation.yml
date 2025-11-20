@@ -11,3 +11,27 @@ main:
     url: "/year-archive/"
   - title: "Contact"
     url: "/contact/"
+# Add this NEW section for the right sidebar
+right_sidebar:
+  - title: "📢 Latest News"
+    children:
+      - title: "Presentations"
+        url: "/#recent-publications-and-presentations" # Links to the section in your text
+      - title: "Blog: Alps are Losing Snow"
+        url: "/year-archive/"
+      - title: "New Paper Accepted"
+        url: "/publications/"
+        
+  - title: "Research Tags"
+    children:
+      - title: "Snow Hydrology"
+        url: "/tags/#snow-hydrology"
+      - title: "Permafrost"
+        url: "/tags/#permafrost"
+      - title: "Snow Water Equivalent"
+        url: "/tags/#SWE"
+        
+  - title: "Contact"
+    children:
+      - title: "Email Me"
+        url: "mailto:johnmohd.wani@unitn.it"
