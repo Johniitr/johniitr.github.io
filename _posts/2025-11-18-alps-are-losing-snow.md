@@ -9,7 +9,7 @@ tags:
   - SWE
   - Po River Basin
 layout: single
-excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin." # <--- THIS FIXES THE REPETITION
+excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin."
 header:
   overlay_image: /assets/images/IMG_1742.jpg #
   overlay_filter: 0.5
@@ -25,7 +25,7 @@ Seasonal snowpack is a key component of the mountain cryosphere, acting as a **v
 
 This study provides the first comprehensive **long-term (1991–2021) analysis** of **Snow Water Equivalent (SWE)** changes in the Po River District, Italy, one of Europe’s most climate-sensitive regions. Our findings show **stark elevation-dependent changes** in snow water storage and duration with profound and immediate implications for water security and climate adaptation.
 
-Using a high-resolution (500m, daily) dataset from 1991–2021 (Dall'Amico et al., 2025), we observed two primary findings: We observed a profound **loss of snow volume and decrease in duration below 2000 meters**, with some low-elevation bands losing over **30%** of their total snow-water storage. We show that this shorter snow season is not just an artifact of earlier spring melt, but is primarily driven by a **delayed onset of snow accumulation in early winter**.
+Using a high-resolution (500m, daily) dataset from 1991–2021 **[Dall'Amico et al., 2025](https://doi.org/10.1038/s41597-025-04633-5)**, we observed two primary findings: We observed a profound **loss of snow volume and decrease in duration below 2000 meters**, with some low-elevation bands losing over **30%** of their total snow-water storage. We show that this shorter snow season is not just an artifact of earlier spring melt, but is primarily driven by a **delayed onset of snow accumulation in early winter**.
 
 *(Note: High-elevation zones (>2500 m) are experiencing increased accumulation, but this requires careful interpretation due to methodological constraints and systematic overestimation of high elevation precipitation by ERA5.)*
 
