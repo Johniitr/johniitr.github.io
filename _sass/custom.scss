@@ -1,21 +1,49 @@
-// In _sass/custom.scss
+/* =========================================
+   1. FONT IMPORTS
+   ========================================= */
+/* You must import Merriweather from Google Fonts for it to work */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
-$base-color: #2196f3;  // A medium blue for links and highlights
-$primary-color: #0d47a1; // A dark blue for buttons
+/* =========================================
+   2. COLOR VARIABLES (Ice/Snow Theme)
+   ========================================= */
+$base-color: #2196f3;           /* Medium blue (Links/Highlights) */
+$primary-color: #0077b6;        /* Deep Snow Blue (Buttons/Accents) */
+$text-color: #2b2b2b;           /* Soft Black (Easier on eyes than #000) */
+$background-color: #fdfdfd;     /* Snow White (Slightly off-white) */
+$code-background-color: #f0f7fb;/* Icy tint for code blocks */
 
-// ---
-// Optional: Override button color for a cleaner look
-// $btn-primary-color: $primary-color;
-/* Custom CSS to increase profile picture size */
-.author__avatar img {
-  /* Increase the maximum size of the image */
-  max-width: 150px; 
-  
-  /* Optionally adjust the margin below the image if needed */
-  margin-bottom: 0.5em; 
+/* =========================================
+   3. TYPOGRAPHY
+   ========================================= */
+/* Apply Merriweather to all headings (h1, h2, h3...) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", "Georgia", serif !important;
 }
 
-/* Ensure the container around the image is wide enough */
+/* =========================================
+   4. PROFILE PICTURE SIZING
+   ========================================= */
+.author__avatar img {
+  max-width: 150px; /* Image Size */
+  margin-bottom: 0.5em;
+  border: 3px solid $primary-color; /* Optional: Adds a nice blue ring around photo */
+}
+
 .author__avatar {
-  max-width: 160px; /* Should be slightly larger than the max-width of the image */
+  max-width: 160px; /* Container Size */
+}
+
+/* =========================================
+   5. BLOG POST READABILITY
+   ========================================= */
+.page__content {
+  font-size: 1.1em;   /* Slightly larger text */
+  line-height: 1.7;   /* More breathing room between lines */
+  color: $text-color;
+}
+
+/* Optional: Make links stand out with your base color */
+a {
+  color: $base-color;
 }

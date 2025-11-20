@@ -9,6 +9,10 @@ tags:
   - SWE
   - Po River Basin
 layout: single  # Ensuring the post layout is single
+header:
+  overlay_image: /assets/images/IMG_1742.heic # Upload a wide photo here
+  overlay_filter: 0.5 # Darkens image so white text is readable
+  caption: "Photo credit: [**John Wani**]()"
 ---
 
 
