@@ -8,15 +8,16 @@ tags:
   - Snow
   - SWE
   - Po River Basin
-layout: single  # Ensuring the post layout is single
+layout: single
+excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin." # <--- THIS FIXES THE REPETITION
 header:
-  overlay_image: /assets/images/IMG_1742.heic # Upload a wide photo here
-  overlay_filter: 0.5 # Darkens image so white text is readable
+  overlay_image: /assets/images/IMG_1742.jpg #
+  overlay_filter: 0.5
   caption: "Photo credit: [**John Wani**]()"
 ---
 
 
-Seasonal snowpack is a key component of the mountain cryosphere, acting as a **vital natural reservoir** that regulates runoff downstream in snowfed basins. In mid- and low-elevation mountain regions such as the European Alps, snow processes—accumulation and ablation—are **highly sensitive to climate change**, having direct implications for hydrological forecasting and water availability.
+Seasonal snowpack is a key component of the mountain cryosphere, acting as a **vital natural reservoir** that regulates runoff downstream in snowfed basins. In mid- and low-elevation mountain regions such as the European Alps, snow processes such as accumulation and ablation are **highly sensitive to climate change**, having direct implications for hydrological forecasting and water availability.
 
 ---
 

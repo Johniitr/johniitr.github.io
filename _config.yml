@@ -12,7 +12,7 @@ plugins:
   - jekyll-seo-tag
 author:
   name   : "John Mohd Wani"
-  avatar : "/assets/images/IMG_5301.heic"
+  avatar : "/assets/images/IMG_5301.jpg"
   bio    : "Cryosphere Researcher"
 
   links:
