@@ -38,7 +38,7 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ### Upcoming Training & Workshops
 
-* **May 03-08, 2026:** 🎓 **Convener** for the *Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments* short course at **EGU 2026, Vienna, Austria**. [More Details](/workshops/)
+* **May 03-08, 2026:** **Convener** for the *Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments* short course at **EGU 2026, Vienna, Austria**. [More Details](/workshops/)
 
 ### Recent Presentations
 
