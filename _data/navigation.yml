@@ -9,6 +9,8 @@ main:
     url: "/publications/"
   - title: "Blog"
     url: "/year-archive/"
+  - title: "Workshops"   
+    url: "/workshops/"
   - title: "Contact"
     url: "/contact/"
 # Add this NEW section for the right sidebar
