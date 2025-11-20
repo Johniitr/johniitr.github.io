@@ -8,9 +8,7 @@ header:
   overlay_image: /assets/images/IMG_1742.jpg # Replace with your file name
   overlay_filter: 0.5 # Darkens image (0.0 to 1.0) so white text is readable
   caption: "Photo credit: [**John Wani**]()"
-  actions: # Optional: Add a button on top of the photo
-    - label: "Download CV"
-      url: "/assets/documents/john_wani_vitae_cv.pdf"
+
 
 # 2. THE RIGHT SIDEBAR CONFIGURATION
 sidebar:
@@ -44,10 +42,10 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
     <h3>🎤 Recent Presentations</h3>
     <ul>
       <li>
-        <strong>Oct 2025:</strong> Presented findings on <em>Impact of forest disturbances on snow dynamics</em> at the <strong>XII IAHS 2025, Roorkee, India</strong>.
+        <strong>Oct 2025:</strong> Presented findings on <em>Impact of forest disturbances</em> at <strong>XII IAHS 2025</strong>.
       </li>
       <li>
-        <strong>Sept 2025:</strong> Presented findings on <em>Three decades of snow water equivalent dynamics</em> at the <strong>IMC 2025, Innsbruck, Austria</strong>. <a href="/publications/">[Read more]</a>
+        <strong>Sept 2025:</strong> Presented findings on <em>Po River Basin Snow Dynamics</em> at <strong>IMC 2025</strong>. <a href="/publications/">[Read more]</a>
       </li>
     </ul>
   </div>
