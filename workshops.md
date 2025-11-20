@@ -12,14 +12,14 @@ Here you can find information about the training workshops and schools I have or
 ### **1. Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments**
 * **Date:** May 03-08, 2026
 * **Location:** EGU 2026, Vienna, Austria
-* **Role:** Convener | Co-conveners: Giacomo Bertoldi, Marialaura Bancheri, Matteo Dall’Amico and Giuseppe Formetta
-* **Topic:** A hands-on course on setting up open-source models (GEOtop and GEOframe) in snow dominated catchments.
+* **Role:** Convener and Co-conveners: Giacomo Bertoldi, Marialaura Bancheri, Matteo Dall’Amico and Giuseppe Formetta
+* **Topic:** A hands-on course on setting up open-source models (**[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)**) in snow dominated catchments.
 
-<a href="[LINK_TO_REGISTRATION](https://meetingorganizer.copernicus.org/EGU26/session/57905)" class="btn btn--success">Register Now</a>
+<a href="https://meetingorganizer.copernicus.org/EGU26/session/57905" class="btn btn--success">Register Now</a>
 
 ---
 
-## ✅ Past Events
+## Past Events
 
 ### **2025**
 * **Introducing GEOtop and GEOframe: Open-Source Tools for Hydrological Modelling in Mountain Catchments**
