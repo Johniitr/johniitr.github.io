@@ -18,6 +18,13 @@ excerpt: "Providing the first-ever field-based permafrost characteristics in the
 
 Understanding the characteristics and thermal regime of high-altitude mountain permafrost is one of the great challenges in modern cryosphere science. While the permafrost research on Tibetan Plateau has been extensively studied and globally very well recognised. However, a critical research gap has long existed regarding the permafrost conditions in the **Indian Himalayan Region**. The lack of data has hindered our ability to predict how these sensitive environments will respond to climate warming.
 
+<figure class="align-center">
+  <img src="/assets/images/where_is_permafrost.jpg" alt="Where is Permafrost?">
+  <figcaption>
+    <strong>Fig.:</strong> Study Area: Upper Ganglass Catchment, Leh Ladakh (UT).
+  </figcaption>
+</figure>
+
 Our recent research efforts have focused on filling this gap. Through extensive field campaigns and modeling efforts using the **[GEOtop](https://github.com/geotopmodel/geotop)**, we have provided the **first-ever field-based permafrost characteristics** for this region.
 
 This work has been published in two key studies:
