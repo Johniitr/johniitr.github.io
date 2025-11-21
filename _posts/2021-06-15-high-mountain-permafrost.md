@@ -22,6 +22,10 @@ Understanding the characteristics and thermal regime of high-altitude mountain p
   <img src="/assets/images/where_is_permafrost.jpg" alt="Where is Permafrost?">
   <figcaption>
     <strong>Fig.:</strong> Study Area: Upper Ganglass Catchment, Leh Ladakh (UT).
+     <br>
+    <span style="font-size: 0.85em; color: #777;">
+      &copy; 2021 John Mohd Wani. All rights reserved.
+    </span>
   </figcaption>
 </figure>
 

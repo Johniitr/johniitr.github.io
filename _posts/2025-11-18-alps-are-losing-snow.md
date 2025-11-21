@@ -31,6 +31,10 @@ Using a high-resolution (500m, daily) dataset from 1991–2021 **[Dall'Amico et 
   <img src="/assets/images/fig_swe_vol_anomaly_out.jpg" alt="Percentage change in total volume of water (Elevation-wise)">
   <figcaption>
     <strong>Fig.:</strong> Percentage change in total volume of water (Elevation-wise) for the period 1991 to 2021. It highlights the change in the recent decade with reference to mean of first two decades.
+    <br>
+    <span style="font-size: 0.85em; color: #777;">
+      &copy; 2025 John Mohd Wani. All rights reserved.
+    </span>
   </figcaption>
 </figure>
 
