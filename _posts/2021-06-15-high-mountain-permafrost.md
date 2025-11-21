@@ -43,10 +43,10 @@ The Indian Himalaya Region is no longer a blank spot on the permafrost research 
   <h4>References</h4>
   <ul>
     <li>
-      <strong>Wani, J. M.</strong>, et al. (2021). <em>The surface energy balance in a cold and arid permafrost environment, Ladakh, Himalayas, India</em> The Cryosphere*, 15, 2273--2293. <a href="https://doi.org/10.5194/tc-15-2273-2021">[DOI]</a>
+      <strong>Wani, J. M.</strong>, et al. (2021). <em>The surface energy balance in a cold and arid permafrost environment, Ladakh, Himalayas, India</em> The Cryosphere, 15, 2273--2293. <a href="https://doi.org/10.5194/tc-15-2273-2021">[DOI]</a>
     </li>
     <li>
-      <strong>Wani, J. M.</strong>, et al. (2020). <em>Single-year thermal regime and inferred permafrost occurrence in the upper Ganglass catchment of the cold-arid Himalaya, Ladakh, India</em> Science of the Total Environment*, 703, 134631. <a href="https://doi.org/10.1016/j.scitotenv.2019.134631">[DOI]</a>
+      <strong>Wani, J. M.</strong>, et al. (2020). <em>Single-year thermal regime and inferred permafrost occurrence in the upper Ganglass catchment of the cold-arid Himalaya, Ladakh, India</em> Science of the Total Environment, 703, 134631. <a href="https://doi.org/10.1016/j.scitotenv.2019.134631">[DOI]</a>
     </li>
   </ul>
 </div>
