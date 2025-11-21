@@ -32,6 +32,13 @@ The Po River District covers a vast and complex topography, including parts of t
 * **Resolution:** 500 m (Spatial) / Daily (Temporal)
 * **Coverage:** Po River District (Alps & Apennines)
 
+<figure class="align-center">
+  <img src="/assets/images/po_study.png" alt="Overview map of the Po River District">
+  <figcaption>
+    <strong>Figure X:</strong> Overview map of the Po River District (red and dashed) showing the topographic and hydrological features annotated with region names. Blue colored overlay shows the long-term peak SWE distribution for the period 1991-2021.
+  </figcaption>
+</figure>
+
 Generating consistent data over complex terrain requires more than just interpolation. We utilized a **hybrid modeling approach** that integrates:
 
 1.  **Physically-based Modeling:** Using the **[GEOtop model](https://github.com/geotopmodel/geotop)** to simulate the snow dynamics.
