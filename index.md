@@ -47,9 +47,7 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ### From the Blog
 
-{% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
-
-{% for post in posts %}
+{% for post in site.posts limit:3 %}
 <div class="list__item">
   <article class="archive__item">
     <p class="archive__item-excerpt" itemprop="description">
@@ -60,5 +58,5 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 {% endfor %}
 
 <p style="margin-top: 20px;">
-  <a href="/year-archive/" class="btn btn--info">View All Posts</a>
+  <a href="/year-archive/" class="btn btn--info btn--small">View All Posts</a>
 </p>
