@@ -36,30 +36,43 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ## 📢 Latest Research Updates
 
+{% assign upcoming_events = site.data.events | where: "status", "upcoming" %}
+
+{% if upcoming_events.size > 0 %}
 <div class="notice--info">
-  <h4 style="margin-top: 0;"><i class="fas fa-calendar-alt"></i> Upcoming: EGU General Assembly 2026</h4>
-  
-  <p style="margin-bottom: 0.5em;"><strong>📅 May 03-08, 2026 | Vienna, Austria</strong></p>
-  
-  <p>I will be serving as a <strong>Convener</strong> for the short course: 
-  <br><em>"Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments"</em>.</p>
-  
-  <p><a href="/workshops/" class="btn btn--primary btn--small">View Course Details</a></p>
+  {% for event in upcoming_events %}
+  <h4 style="margin-top: 0;"><i class="fas fa-calendar-alt"></i> Upcoming: {{ event.role }}</h4>
+  <p style="margin-bottom: 0.5em;"><strong>📅 {{ event.date }} | {{ event.location }}</strong></p>
+  <p>Topic: <em>{{ event.title }}</em></p>
+  {% if event.url %}
+  <p><a href="{{ event.url }}" class="btn btn--primary btn--small">View Details</a></p>
+  {% endif %}
+  {% endfor %}
 </div>
+{% endif %}
+
 
 ### Recent Presentations
 
 <ul style="list-style-type: none; padding-left: 0;">
   
+  {% assign past_events = site.data.events | where: "status", "past" %}
+  
+  {% for event in past_events %}
   <li style="margin-bottom: 15px;">
-    <strong>Oct 2025 | XII IAHS, Roorkee, India</strong><br>
-    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Impact of forest disturbances on snow dynamics</em>.
+    <strong>{{ event.date }} | {{ event.location }}</strong><br>
+    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> 
+    
+    {% if event.role == "Convener" %}
+      <span style="background-color: #2196f3; color: white; padding: 1px 4px; font-size: 0.8em; border-radius: 3px;">Convener</span>
+    {% endif %}
+    
+    {{ event.title }}.
+    {% if event.url %}
+    <a href="{{ event.url }}" class="btn btn--inverse btn--x-small" style="margin-left: 5px;">Read More</a>
+    {% endif %}
   </li>
-
-  <li style="margin-bottom: 15px;">
-    <strong>Sept 2025 | IMC, Innsbruck, Austria</strong><br>
-    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Three decades of snow water equivalent dynamics in the Po River Basin</em>. <a href="/publications/" class="btn btn--inverse btn--x-small" style="margin-left: 5px;">More</a>
-  </li>
+  {% endfor %}
 
 </ul>
 

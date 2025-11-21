@@ -1,0 +1,24 @@
+# _data/events.yml
+
+# UPCOMING EVENT (Shows in Blue Box)
+- title: "Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments"
+  date: "May 03-08, 2026"
+  location: "EGU 2026, Vienna, Austria"
+  role: "Convener" 
+  status: "upcoming" # <--- 'upcoming' puts it in the highlighted box
+  url: "/workshops/"
+
+# PAST EVENTS (Shows in List)
+- title: "Impact of forest disturbances on snow dynamics"
+  date: "Oct 2025"
+  location: "XII IAHS 2025, Roorkee, India"
+  role: "Speaker"
+  status: "past" # <--- 'past' puts it in the standard list
+  url: "/publications/"
+
+- title: "Three decades of snow water equivalent dynamics in the Po River Basin"
+  date: "Sept 2025"
+  location: "IMC 2025, Innsbruck, Austria"
+  role: "Speaker"
+  status: "past"
+  url: "/publications/"
