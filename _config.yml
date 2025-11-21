@@ -30,6 +30,6 @@ author:
       url: "https://www.researchgate.net/profile/John-Wani-2?ev=hdr_xprf"
     - label: "University of Trento" 
       icon: "fas fa-university" 
-      url: "https://www.centro3a.unitn.it/en" 
+      url: "https://webapps.unitn.it/du/it/Persona/PER0265600/Progetti" 
 paginate: 5
 paginate_path: /page:num/
