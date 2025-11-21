@@ -16,7 +16,7 @@ header:
 excerpt: "Providing the first-ever field-based permafrost characteristics in the Indian Himalayan region."
 ---
 
-Understanding the characteristics and thermal regime of high-altitude mountain permafrost is one of the great challenges in modern cryosphere science. While the permafrost research on Tibetan Plateau has been extensively studied and globally very well recognised. However, a critical research gap has long existed regarding the permafrost conditions in the **Indian Himalayan Region**. The lack of data has hindered our ability to predict how these sensitive environments will respond to climate warming.
+**Permafrost** is defined as sub-surface material, excluding glaciers, having a temperature of less or equal to 0 °C for at least two consecutive years (ACGR, 1988, Van Everdingen, 2005). It is a **thermal subsurface condition** of the ground and considered as a climatic phenomenon. Understanding the characteristics and thermal regime of high-altitude mountain permafrost is one of the great challenges in the data scarce region's like the trans-Himalayan Ladakh region. While the permafrost research on Tibetan Plateau has been extensively studied and globally very well recognised. However, a critical research gap has long existed regarding the permafrost conditions in the **Indian Himalayan Region**. The lack of data has hindered our ability to predict how these sensitive environments will respond to climate warming.
 
 <figure class="align-center">
   <img src="/assets/images/where_is_permafrost.jpg" alt="Where is Permafrost?">
@@ -36,7 +36,7 @@ This work has been published in two key studies:
 1.  **[Wani et al., Science of the Total Environment 2020](https://doi.org/10.1016/j.scitotenv.2019.134631)**
 2.  **[Wani et al., The Cryosphere 2021](https://doi.org/10.5194/tc-15-2273-2021)**
 
-These studies move beyond theoretical and remote sensing assumptions, offering concrete data on ground temperature profiles, active layer depths, and the thermal state of the permafrost in the cold-arid Himalayas.
+These studies move beyond theoretical and remote sensing assumptions, offering concrete data on ground thermal envelopes, active layer thickness, and the thermal state of the permafrost in the cold-arid Himalayas.
 
 ## Key Implications
 

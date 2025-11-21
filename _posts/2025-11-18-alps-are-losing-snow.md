@@ -25,7 +25,7 @@ Seasonal snowpack is a key component of the mountain cryosphere, acting as a **v
 
 This study provides the first comprehensive **long-term (1991–2021) analysis** of **Snow Water Equivalent (SWE)** changes in the Po River District, Italy, one of Europe’s most climate-sensitive regions. Our findings show **stark elevation-dependent changes** in snow water storage and duration with profound and immediate implications for water security and climate adaptation.
 
-Using a high-resolution (500m, daily) dataset from 1991–2021 **[Dall'Amico et al., 2025](https://doi.org/10.1038/s41597-025-04633-5)**, we observed two primary findings: We observed a profound **loss of snow volume and decrease in duration below 2000 meters**, with some low-elevation bands losing over **30%** of their total snow-water storage. We show that this shorter snow season is not just an artifact of earlier spring melt, but is primarily driven by a **delayed onset of snow accumulation in early winter**.
+Using a high-resolution (500m, daily) dataset from 1991–2021 **[Dall'Amico et al., 2025](https://doi.org/10.1038/s41597-025-04633-5)**, we observed a profound **loss of snow volume and decrease in duration below 2000 meters**, with some low-elevation bands losing over **30%** of their total snow-water storage. In contrast, high-elevation zones (>2500 m) are experiencing increased accumulation but a continued shortened snow season. Second, we show that this shorter snow season is not just an artifact of earlier spring melt, but is primarily driven by a **delayed onset of snow accumulation in early winter**.
 
 <figure class="align-center">
   <img src="/assets/images/fig_swe_vol_anomaly_out.jpg" alt="Percentage change in total volume of water (Elevation-wise)">
@@ -53,5 +53,11 @@ These elevation-dependent changes highlight a fundamental shift in the hydrologi
 To know more and see the full methodology, **[click here to read our preprint](#)**.
 
 **References:**
-
-Dall’Amico, M., Tasin, S., Di Paolo, F. et al. 30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy. *Sci Data* **12**, 374 (2025). [https://doi.org/10.1038/s41597-025-04633-5]()
+<div class="notice--success">
+  <h4>Citation & Download</h4>
+  <p><strong>Dall’Amico, M., Tasin, S., Di Paolo, F., Wani, J.M., et al. (2025).</strong><br>
+  <em>30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy.Scientific Data, 12, 374.</em><br>
+  </p>
+  
+  <a href="https://doi.org/10.1038/s41597-025-04633-5" class="btn btn--inverse">View Paper</a> 
+  <a href="https://zenodo.org/records/11196628" class="btn btn--inverse">Download Data</a>
