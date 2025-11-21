@@ -42,7 +42,7 @@ Basin, Italy: Trends and Implications. *egusphere-2025-5520, Submitted 07 Nov 20
 7. **Wani, J. M.**, Thayyen, R. J., Gruber, S., Ojha, C.S.P., & Stumm, D. (2020) Single-year thermal regime and inferred permafrost occurrence in the upper Ganglass catchment of the cold-arid Himalaya, Ladakh, India. *Science of the Total Environment*, 703, 134631.
    <a href="https://doi.org/10.1016/j.scitotenv.2019.134631" class="btn btn--info">DOI</a> 
 
-## Conference Proceedings
+## Conference Proceedings{#conference-proceedings}
 - **Wani, J. M.**, Bertoldi, G., Gleason, K. E., and Rigon, R.: Assessing the Impact of Forest
 Disturbances on Snowpack Dynamics: A Multi-Model Intercomparison, XIIth IAHS Scientific Assembly 2025, Roorkee, India, Oct 5-10 2025. IAHS25_ABS_L1269, 2025.
 

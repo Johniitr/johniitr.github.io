@@ -14,11 +14,11 @@
   location: "XII IAHS 2025, Roorkee, India"
   role: "Speaker"
   status: "past" # <--- 'past' puts it in the standard list
-  url: "/publications/"
+  url: "/publications/#conference-proceedings"
 
 - title: "Three decades of snow water equivalent dynamics in the Po River Basin"
   date: "Sept 2025"
   location: "IMC 2025, Innsbruck, Austria"
   role: "Speaker"
   status: "past"
-  url: "/publications/"
+  url: "/publications/#conference-proceedings"
