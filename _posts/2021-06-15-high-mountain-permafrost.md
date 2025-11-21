@@ -12,28 +12,28 @@ layout: single
 header:
   overlay_image: /assets/images/permafrost_UGC.png # Make sure to upload a generic mountain photo with this name!
   overlay_filter: 0.5
-  caption: "Fieldwork in the Ganglass catchment, Ladakh."
+  caption: "Upper Ganglass catchment, Ladakh."
 excerpt: "Providing the first-ever field-based permafrost characteristics in the Indian Himalayan region."
 ---
 
-Understanding the characteristics and thermal regime of high-altitude mountain permafrost is one of the great challenges in modern cryosphere science. While the Tibetan Plateau has been extensively studied, a critical research gap has long existed regarding the permafrost conditions in the **Indian Himalayan Region**. This lack of data has hindered our ability to predict how these sensitive environments will respond to climate warming.
+Understanding the characteristics and thermal regime of high-altitude mountain permafrost is one of the great challenges in modern cryosphere science. While the permafrost research on Tibetan Plateau has been extensively studied and globally very well recognised. However, a critical research gap has long existed regarding the permafrost conditions in the **Indian Himalayan Region**. The lack of data has hindered our ability to predict how these sensitive environments will respond to climate warming.
 
-Our recent research efforts have focused on filling this gap. Through extensive field campaigns and modeling efforts, we have provided the **first-ever field-based permafrost characteristics** for this region.
+Our recent research efforts have focused on filling this gap. Through extensive field campaigns and modeling efforts using the **[GEOtop](https://github.com/geotopmodel/geotop)**, we have provided the **first-ever field-based permafrost characteristics** for this region.
 
 This work has been published in two key studies:
 
 1.  **[Wani et al., Science of the Total Environment 2020](https://doi.org/10.1016/j.scitotenv.2019.134631)**
 2.  **[Wani et al., The Cryosphere 2021](https://doi.org/10.5194/tc-15-2273-2021)**
 
-These studies move beyond theoretical assumptions, offering concrete data on ground temperature profiles, active layer depths, and the thermal state of the frozen ground in the Himalayas.
+These studies move beyond theoretical and remote sensing assumptions, offering concrete data on ground temperature profiles, active layer depths, and the thermal state of the permafrost in the cold-arid Himalayas.
 
 ## Key Implications
 
 This research gives new impetus to mountain permafrost research in the region. By establishing a baseline of permafrost characteristics, we can now better understand:
 * **Hydrological Impacts:** How thawing ground affects water availability in downstream basins.
-* **Slope Stability:** The risk of landslides and debris flows, rockfalls.
+* **Slope Stability:** The risk of landslides and debris flows, rockfalls, etc.
 
-The Indian Himalaya is no longer a blank spot on the permafrost research map.
+The Indian Himalaya Region is no longer a blank spot on the permafrost research map.
 
 ***
 
