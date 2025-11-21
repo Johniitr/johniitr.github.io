@@ -27,7 +27,7 @@ Our analysis identified the source as a **hanging glacier** located on a steep m
 <figure class="align-center">
   <img src="/assets/images/chamoli_2021.jpg" alt="A Hanging glacier in google earth image of 2017.">
   <figcaption>
-    <strong>Figure 1:</strong> A Hanging glacier in google earth image of 2017. The detached right lobe is marked blue. B Heli photograph of 9 February 2021 of the site showing detachment of the glacier creating an ice-rock avalanche. (Photograph courtesy, THDC).
+    <strong>Fig.:</strong> A Hanging glacier in google earth image of 2017. The detached right lobe is marked blue. B Heli photograph of 9 February 2021 of the site showing detachment of the glacier creating an ice-rock avalanche. (Photograph courtesy, THDC).
   </figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Permafrost modeling provided a crucial insight. At approximately **40 meters dep
 
 The modeling also suggested warm permafrost conditions below 50m, creating favorable conditions for **intense frost cracking** in the upper 10–15 meters of the bedrock, further weakening the slope stability.
 
-## Conclusion and observation
+## Conclusion and Observation
 
 The Rishiganga disaster highlights the fragility of the Himalayan cryosphere. It is proposed that the recent changes in weather conditions primarily drove this event through a combination of geological, glaciological, and permafrost processes. Permafrost studies, including monitoring of ground surface temperature (GST) and modelling of the ground thermal regime, will provide an early indicator. Permafrost elevations in this area and most of the Indian Himalayan region are not known, which will further aggravate the risk of the high elevation cryosphere region under a warming climate.
 
