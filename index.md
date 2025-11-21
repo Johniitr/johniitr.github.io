@@ -36,14 +36,32 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 
 ## 📢 Latest Research Updates
 
-### Upcoming Training & Workshops
-
-* **May 03-08, 2026:** **Convener** for the *Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments* short course at **EGU 2026, Vienna, Austria**. [More Details](/workshops/)
+<div class="notice--info">
+  <h4 style="margin-top: 0;"><i class="fas fa-calendar-alt"></i> Upcoming: EGU General Assembly 2026</h4>
+  
+  <p style="margin-bottom: 0.5em;"><strong>📅 May 03-08, 2026 | Vienna, Austria</strong></p>
+  
+  <p>I will be serving as a <strong>Convener</strong> for the short course: 
+  <br><em>"Introducing GEOtop and GEOframe: Open Source Tools for Modeling Snow Dominated Catchments"</em>.</p>
+  
+  <p><a href="/workshops/" class="btn btn--primary btn--small">View Course Details</a></p>
+</div>
 
 ### Recent Presentations
 
-* **Oct 2025:** Presented findings on *Impact of forest disturbances on snow dynamics* at the **XII IAHS 2025, Roorkee, India**.
-* **Sept 2025:** Presented findings on *Three decades of snow water equivalent dynamics in the Po River Basin* at the **IMC 2025, Innsbruck, Austria**. [Read more](/publications/).
+<ul style="list-style-type: none; padding-left: 0;">
+  
+  <li style="margin-bottom: 15px;">
+    <strong>Oct 2025 | XII IAHS, India</strong><br>
+    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Impact of forest disturbances on snow dynamics</em>.
+  </li>
+
+  <li style="margin-bottom: 15px;">
+    <strong>Sept 2025 | IMC, Austria</strong><br>
+    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Three decades of snow water equivalent dynamics in the Po River Basin</em>. <a href="/publications/" class="btn btn--inverse btn--x-small" style="margin-left: 5px;">Read Paper</a>
+  </li>
+
+</ul>
 
 ### From the Blog
 
