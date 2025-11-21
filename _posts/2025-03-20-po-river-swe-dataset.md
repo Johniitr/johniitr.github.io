@@ -62,6 +62,14 @@ This dataset is open-access and ready for use in climate impact studies like sno
   
   <a href="https://doi.org/10.1038/s41597-025-04633-5" class="btn btn--inverse">View Paper</a> 
   <a href="https://zenodo.org/records/11196628" class="btn btn--inverse">Download Data</a>
+
+</div>
+
+<div class="notice--info">
+  <h4>See the Data in Action</h4>
+  <p>Want to see what this data reveals about snow water storage?</p>
+  <p>We performed a comphrehensive analysis using this exact dataset. Read the key findings in our recent blog post:<br>
+  👉 <strong><a href="/year-archive/2025/11/18/alps-are-losing-snow/">The Alps are Losing Snow: A 30-Year Analysis</a></strong></p>
 </div>
 
 <figure class="align-full">
