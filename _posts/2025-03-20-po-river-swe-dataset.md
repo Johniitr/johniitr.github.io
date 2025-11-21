@@ -35,7 +35,7 @@ The Po River District covers a vast and complex topography, including parts of t
 <figure class="align-center">
   <img src="/assets/images/po_study.jpg" alt="Overview map of the Po River District">
   <figcaption>
-    <strong>Figure X:</strong> Overview map of the Po River District (red and dashed) showing the topographic and hydrological features annotated with region names. Blue colored overlay shows the long-term peak SWE distribution for the period 1991-2021.
+    <strong>Fig.:</strong> Overview map of the Po River District (red and dashed) showing the topographic and hydrological features annotated with region names. Blue colored overlay shows the long-term peak SWE distribution for the period 1991-2021.
   </figcaption>
 </figure>
 
