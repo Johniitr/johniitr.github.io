@@ -10,7 +10,7 @@ tags:
   - GEOtop
 layout: single
 header:
-  overlay_image: /assets/images/permafrost_UGC.png # Make sure to upload a generic mountain photo with this name!
+  overlay_image: /assets/images/permafrost_UGC.png
   overlay_filter: 0.5
   caption: "Upper Ganglass catchment, Ladakh."
 excerpt: "Providing the first-ever field-based permafrost characteristics in the Indian Himalayan region."

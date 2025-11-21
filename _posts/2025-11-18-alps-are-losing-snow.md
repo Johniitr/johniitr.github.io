@@ -11,7 +11,7 @@ tags:
 layout: single
 excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin."
 header:
-  overlay_image: /assets/images/IMG_1742.jpg #
+  overlay_image: /assets/images/IMG_1742.jpg 
   overlay_filter: 0.5
   caption: "Photo credit: [**John Wani**]()"
 ---
