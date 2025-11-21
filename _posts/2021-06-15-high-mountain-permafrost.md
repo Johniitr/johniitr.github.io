@@ -4,10 +4,10 @@ date: 2021-06-15
 categories:
   - Research
 tags:
+  - Permafrost      # Capitalized
   - Indian Himalaya
-  - Permafrost
-  - GEOtop
-  - modeling
+  - Field Work
+  - Thermal Regime
 layout: single
 header:
   overlay_image: /assets/images/permafrost_UGC.png

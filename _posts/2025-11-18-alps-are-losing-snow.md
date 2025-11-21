@@ -4,11 +4,10 @@ date: 2025-11-18
 categories:
   - Research
 tags:
-  - snow
-  - snow hydrology
-  - swe
-  - Po River Basin
-  - climate change
+  - Snow Hydrology
+  - SWE
+  - Po River Basin  # Standardized
+  - Climate Change
 layout: single
 excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin."
 header:

@@ -5,12 +5,12 @@ categories:
   - Datasets
   - Research
 tags:
-  - Po River
-  - ADBPO
+  - Snow Hydrology
+  - Po River Basin  # Merged from "Po River"
   - Open Data
-  - swe
-  - gEOtop
-  - modelling
+  - SWE
+  - GEOtop          # Fixed capitalization
+  - Remote Sensing
 layout: single
 excerpt: "Presenting a daily, 500m resolution snow water equivalent dataset (1991-2021) for the Po River District."
 header:

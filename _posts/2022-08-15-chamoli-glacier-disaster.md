@@ -4,12 +4,12 @@ date: 2022-08-15
 categories:
   - Research
 tags:
-  - Uttarakhand
   - Natural Hazards
-  - Chamoli
+  - Uttarakhand
   - Debris Flow
-  - permafrost
-  - climate change
+  - Permafrost      # Capitalized
+  - Climate Change
+  - Modeling
 layout: single
 excerpt: "A preliminary assessment of the catastrophic hanging glacier avalanche in Rishiganga, India."
 header:
