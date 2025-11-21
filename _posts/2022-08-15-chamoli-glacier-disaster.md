@@ -15,7 +15,7 @@ excerpt: "A preliminary assessment of the catastrophic hanging glacier avalanche
 header:
   overlay_image: /assets/images/chamoli_disaster_header.jpg
   overlay_filter: 0.5
-  caption: "The Rishiganga Valley aftermath."
+  caption: ""
 ---
 
 On **7 February 2021**, a catastrophic event struck the Rishiganga and Dhauliganga rivers in Uttarakhand, India. A massive debris flow washed away the Rishiganga hydropower project, damaged the Tapovan-Vishnugad project, and tragically claimed over 100 lives.
