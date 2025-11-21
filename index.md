@@ -52,13 +52,13 @@ I have also applied my expertise to assess high-impact cryosphere hazards, such 
 <ul style="list-style-type: none; padding-left: 0;">
   
   <li style="margin-bottom: 15px;">
-    <strong>Oct 2025 | XII IAHS, India</strong><br>
+    <strong>Oct 2025 | XII IAHS, Roorkee, India</strong><br>
     <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Impact of forest disturbances on snow dynamics</em>.
   </li>
 
   <li style="margin-bottom: 15px;">
-    <strong>Sept 2025 | IMC, Austria</strong><br>
-    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Three decades of snow water equivalent dynamics in the Po River Basin</em>. <a href="/publications/" class="btn btn--inverse btn--x-small" style="margin-left: 5px;">Read Paper</a>
+    <strong>Sept 2025 | IMC, Innsbruck, Austria</strong><br>
+    <i class="fas fa-chalkboard-teacher" style="color: #888;"></i> Presented findings on: <em>Three decades of snow water equivalent dynamics in the Po River Basin</em>. <a href="/publications/" class="btn btn--inverse btn--x-small" style="margin-left: 5px;">More</a>
   </li>
 
 </ul>
