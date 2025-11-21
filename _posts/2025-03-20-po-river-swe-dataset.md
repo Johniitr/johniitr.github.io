@@ -1,5 +1,5 @@
 ---
-title: "New Dataset Release: 30 Years of Snow Water Equivalent in the Po River District"
+title: "30 Years of Snow Water Equivalent in the Po River District"
 date: 2025-03-20
 categories:
   - Datasets
@@ -22,7 +22,7 @@ gallery:
     caption: "Credits: Gaia"
 ---
 
-We are pleased to announce the publication of a comprehensive new snow water equivalent dataset: **"30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy"**, now published in *Scientific Data*.
+We are pleased to announce the publication of a comprehensive new snow water equivalent dataset: **"30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy"**, now published in **[Scientific Data](https://doi.org/10.1038/s41597-025-04633-5)**.
 
 This dataset addresses a critical need for high-resolution, long-term snow water equivalent data in one of Europe's most productive and climate-sensitive regions.
 
@@ -57,13 +57,17 @@ This dataset is open-access and ready for use in climate impact studies like sno
 <div class="notice--success">
   <h4>Citation & Download</h4>
   <p><strong>Dall’Amico, M., Tasin, S., Di Paolo, F., Wani, J.M., et al. (2025).</strong><br>
-  <em>30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy.</em><br>
-  Scientific Data, 12, 374.</p>
+  <em>30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy.Scientific Data, 12, 374.</em><br>
+  </p>
   
   <a href="https://doi.org/10.1038/s41597-025-04633-5" class="btn btn--inverse">View Paper</a> 
   <a href="https://zenodo.org/records/11196628" class="btn btn--inverse">Download Data</a>
 </div>
 
-<figure style="text-align: center;">
-  <img src="/assets/images/po_river.jpg" alt="Map of snow distribution in Po River Basin">
+<figure class="align-full">
+  <img src="/assets/images/po_river.jpg" alt="Po River" style="width: 100%;">
+  
+  <figcaption style="text-align: center; font-size: 0.9em; color: #666; margin-top: 5px;">
+    Photo credit: <strong>Gaia</strong>
+  </figcaption>
 </figure>
