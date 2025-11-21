@@ -69,7 +69,8 @@ This dataset is open-access and ready for use in climate impact studies like sno
   <h4>See the Data in Action</h4>
   <p>Want to see what this data reveals about snow water storage?</p>
   <p>We performed a comphrehensive analysis using this exact dataset. Read the key findings in our recent blog post:<br>
-  👉 <strong><a href="/year-archive/2025/11/18/alps-are-losing-snow/">The Alps are Losing Snow: A 30-Year Analysis</a></strong></p>
+  
+  👉 <strong><a href="{% post_url 2025-11-18-alps-are-losing-snow %}">The Alps are Losing Snow</a></strong></p>
 </div>
 
 <figure class="align-full">
