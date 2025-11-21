@@ -15,18 +15,24 @@ main:
     url: "/contact/"
 # Add this NEW section for the right sidebar
 right_sidebar:     
-  - title: "Research Tags"
+  - title: "🏷️ Research Tags"
     children:
       - title: "Snow Hydrology"
-        url: "/tags/#snow-hydrology"
+        url: "/tags/#snow-hydrology" # Ensure "Snow Hydrology" is in 'tags:' of your posts!
       - title: "Permafrost"
         url: "/tags/#permafrost"
       - title: "Snow Water Equivalent"
-        url: "/tags/#SWE"
-      - title: "Models (GEOtop/GEOframe)"
-        url: "/tags/#modeling"
+        url: "/tags/#swe" # <--- CHANGED to lowercase '#swe'
+      - title: "Models"
+        url: "/tags/#modeling" 
+      - title: "GEOtop"
+        url: "/tags/#geotop"
+      - title: "GEOframe"
+        url: "/tags/#geoframe"
+      - title: "Climate Change"
+        url: "/tags/#climate-change"
         
-  - title: "Contact"
+  - title: "📧 Contact"
     children:
       - title: "Email Me"
         url: "mailto:johnmohd.wani@unitn.it"

@@ -3,11 +3,12 @@ title: "Alps are Losing Snow"
 date: 2025-11-18
 categories:
   - Research
-  - Snow Hydrology
 tags:
-  - Snow
-  - SWE
+  - snow
+  - snow hydrology
+  - swe
   - Po River Basin
+  - climate change
 layout: single
 excerpt: "A 30-year analysis reveals profound snow loss in the Po River Basin."
 header:

@@ -3,11 +3,11 @@ title: "Inferring Permafrost in the Indian Himalayas"
 date: 2021-06-15
 categories:
   - Research
-  - Permafrost
 tags:
   - Indian Himalaya
   - Permafrost
   - GEOtop
+  - modeling
 layout: single
 header:
   overlay_image: /assets/images/permafrost_UGC.png

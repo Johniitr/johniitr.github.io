@@ -8,9 +8,9 @@ tags:
   - Po River
   - ADBPO
   - Open Data
-  - SWE
-  - GEOtop
-  - Modelling
+  - swe
+  - gEOtop
+  - modelling
 layout: single
 excerpt: "Presenting a daily, 500m resolution snow water equivalent dataset (1991-2021) for the Po River District."
 header:

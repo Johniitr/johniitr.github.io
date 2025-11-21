@@ -3,13 +3,13 @@ title: "The 2021 Chamoli Glacier Avalanche"
 date: 2022-08-15
 categories:
   - Research
-  - Natural Hazards
 tags:
   - Uttarakhand
+  - Natural Hazards
   - Chamoli
   - Debris Flow
-  - Permafrost
-  - Climate Change
+  - permafrost
+  - climate change
 layout: single
 excerpt: "A preliminary assessment of the catastrophic hanging glacier avalanche in Rishiganga, India."
 header:
