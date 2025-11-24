@@ -5,19 +5,21 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: indigo
+  mode: system          # Options: system, light, dark
+  color: indigo           # Options: minimal, blue, navy, forest, indigo, rose, violet
+                        # 'blue' or 'navy' fits your Snow/Ice theme best.
 
-# SEO
+# SEO (Search Engine Optimization)
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'University of Trento'
+    description: 'Personal academic website of John Mohd Wani, Cryosphere Researcher specializing in Snow Hydrology and Permafrost Modeling.'
+    twitter: ''         # Add your handle (e.g. '@JohnWani') or leave empty
+
   analytics:
-    google_analytics: ''
+    google_analytics: '' # Add your ID (G-XXXXXXXX) later if you want tracking
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -33,28 +35,29 @@ header:
     block: 'navbar'
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: true # Allows visitors to toggle Dark/Light mode
     logo:
-      text: 'Your Name'
+      text: 'John Mohd Wani' # <--- IMPORTANT: This changes the top-left name
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    # I removed the license text for a cleaner look.
+    notice: '© {year} John Mohd Wani. All rights reserved.'
     license:
-      enable: true
+      enable: false      # Set to false to hide the Creative Commons icons in footer
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Jan 2, 2006' # US Format. Change to '2 Jan 2006' for European style.
   time_format: '3:04 PM'
 
 # Site features
 features:
   math:
-    enable: false
+    enable: true         # <--- CRITICAL: Changed to TRUE so your equations render!
   privacy_pack:
     enable: false

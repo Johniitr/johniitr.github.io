@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Alex Johnson
+title: John Mohd Wani
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: John Mohd
+last_name: Wani
 
 # Pronouns (optional)
 pronouns: he/him
@@ -23,114 +23,109 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Cryosphere Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: University of Trento
+    url: https://www.centro3a.unitn.it/en
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:johnmohd.wani@unitn.it'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/Johniitr
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+    url: https://www.linkedin.com/in/john-mohd-wani-29404477
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
+    url: https://scholar.google.com/citations?user=2K-7VUMAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0002-9635-0931
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - High mountain processes
+  - Permafrost Modeling
+  - Snow Hydrology
+  - Natural Hazards
+  - Watershed Modeling
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: PhD Civil Engineering (Permafrost Focus)
+    institution: IIT Roorkee, India
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 2015-01-01
+    date_end: 2019-11-23
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Thesis on _Inferring Permafrost and its Characteristics in the Cold-Arid Himalaya_. Supervised by Prof. CSP Ojha and Renoj J. Thayyen. Published 2 papers in The Cryospshere and SCience of the Total Environment.
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: MTech Water Resources Engineering
+    institution: NIT Hamirpur, India
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2012-06-01
+    date_end: 2014-06-30
     summary: |
-      GPA: 4.0/4.0
+      GPA: 8.6/10.0
 
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+      Specialized in Watershed modelling using the SWAT Model.
+  - area: BE Civil Engineering
+    institution: University of Kashmir
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2007-06-01
+    date_end: 2011-08-31
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+      GPA: 8.4/10
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: Assistant Professor (Non-Tenure)
+    company_name: C3A, University of Trento
+    company_url: 'https://www.centro3a.unitn.it/en'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2025-10-01
     date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      To develop an advanced modeling framework for cryo‑hydrological modeling by integrating new process‑based components in the GEOframe modelling system.
+  - position: Postdoctoral Researcher
+    company_name: C3A, University of Trento
+    company_url: 'https://www.centro3a.unitn.it/en'
+    icon: ''
+    date_start: 2023-06-01
+    date_end: 2025-09-30
+    summary: |
+      Worked on quantifying and predicting the response of the snow dynamics to climate change using modelling and data analysis.
 
 # Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python & PyTorch
+      - name: R & Python
         description: ''
-        percent: 95
+        percent: 90
         icon: code-bracket
-      - name: Machine Learning
+      - name: Modelling
         description: ''
         percent: 100
         icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
+      - name: Model development (GEOtop and GEOframe)
         description: ''
-        percent: 85
-        icon: cloud
+        percent: 100
+        icon: cpu-chip
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking in the Rockies
+      - name: Hiking in the Mountains
         description: ''
         percent: 80
         icon: person-simple-walk
-      - name: Building Custom PCs
+      - name: Playing Cricket
         description: ''
         percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
+        icon: cricket-bat-ball
+      - name: Reading
         description: ''
         percent: 70
         icon: book-open
@@ -138,35 +133,11 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Spanish
-    percent: 50
+  - name: Kashmiri
+    percent: 100
+  - name: Urdu
+    percent: 100
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
-    icon: hero/trophy
-    summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
-    summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
-    icon: hero/academic-cap
-    summary: |
-      Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+John Mohd Wani is an early career researcher focused on cryosphere, particularly snow and permafrost processes. This website hosts my work, blog, and updates. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.

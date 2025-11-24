@@ -1,81 +1,43 @@
 ---
-title: "An example preprint / working paper"
+title: "Three decades of snow water equivalent dynamics in the Po River Basin, Italy: Trends and Implications"
+
+# Authors: Use "admin" for yourself to link to your profile
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+- others
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+date: "2025-11-07"
+doi: "10.1038/s41597-025-04633-5"
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ["article"]
+# Publication type:
+# 0 = Uncategorized
+# 1 = Conference paper
+# 2 = Journal article
+publication_types: ["2"]
 
-# Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "*The Cryosphere*"
+publication_short: "TC"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-
+# Tags help filter publications
 tags:
-- Large Language Models
+- Snow Hydrology
+- SWE
+- Po Basin
 
+# Featured Image (optional)
+# Place 'featured.jpg' inside this folder for a thumbnail
 featured: true
 
-hugoblox:
-  ids:
-    arxiv: 1512.04133v1
-
 links:
-- type: preprint
-  provider: arxiv
-  id: 1512.04133v1
-- type: code
-  url: https://github.com/HugoBlox/hugo-blox-builder
-- type: slides
-  url: https://www.slideshare.net/
-- type: dataset
-  url: "#"
-- type: poster
-  url: "#"
-- type: source
-  url: "#"
-- type: video
-  url: https://youtube.com
-- type: custom
-  label: Custom Link
-  url: http://example.org
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
-  focal_point: ""
-  preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects:
-- internal-project
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+- name: Download Preprint
+  url: https://zenodo.org/records/11196628
 ---
 
-This work is driven by the results in my [previous paper](/publications/conference-paper/) on LLMs.
+## Abstract
+Seasonal snowpack is a key component of the mountain cryosphere, acting as a vital natural reservoir that regulates runoff downstream in snowfed basins. In mid- and low-elevation mountain regions such as the European Alps, snow processes, such as accumulation and ablation, are highly sensitive to climate change, having direct implications for hydrological forecasting and water availability. In this study, we present the analysis of a 30-year (1991–2021) long dataset of snow water equivalent (SWE) in the Po River District, Italy, which includes parts of the Alps and Apennines. The data is available at a 500x500 m2 spatial resolution and at a daily temporal scale (Dall’Amico et al., 2025). This data was generated using the “J-Snow” modeling framework, which integrates the physically based GEOtop model with in situ snow height observations and earth observation snow cover products such as MODIS. Our results show that the long-term (30 year) basin-wide mean annual SWE volume
+equals 3.34 Gm3. The elevation-wise statistical analysis of key snow volume and duration metrics shows that the most pronounced snow water equivalent losses occur below 2000 m a.s.l. Below this threshold, both snow volume metrics and duration metrics show a significant decrease, indicating decrease in snow water storage and earlier melt. Above this elevation, the snow volume metrics show increasing trend while as the duration metrics continue to show a shortened (decreasing trend) snow season except at the highest elevations (>2500 m). The findings of this study highlight the changes to the mountain seasonal snow storage and the timing of snow dissappearance across the Italian Alps. This combined effect highlights a fundamental shift in the hydrological regime of the Po River Basin, with significant implications for water availability and management under ongoing climate change.
 
 > [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+This work is based on the analysis on our [previous paper](/publications/swe-data-po/) on SWE data.
