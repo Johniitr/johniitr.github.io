@@ -34,6 +34,8 @@ featured: true
 links:
 - name: Download Data
   url: https://zenodo.org/records/11196628
+- name: Download Paper
+  url: https://doi.org/10.1038/s41597-025-04633-5
 ---
 
 ## Abstract

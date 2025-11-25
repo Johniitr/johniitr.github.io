@@ -33,7 +33,7 @@ tags:
 featured: true
 
 links:
-- name: Paper DOI
+- name: Download Paper
   url: https://doi.org/10.1016/j.scitotenv.2019.134631
 ---
 
