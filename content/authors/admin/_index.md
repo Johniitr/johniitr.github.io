@@ -10,7 +10,7 @@ first_name: John Mohd
 last_name: Wani
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns:
 
 # Status emoji
 status:
