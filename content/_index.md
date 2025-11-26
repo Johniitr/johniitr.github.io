@@ -31,12 +31,30 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
         I am an early career researcher focused on cryosphere, particularly snow and permafrost processes. My research addresses the fundamental challenge of quantifying and predicting the response of the cryosphere (permafrost, snow) to climate change and its impact on water resources and natural hazards. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
 
-        Please reach out to collaborate 😃
+        ---
+
+        ### Supervision & Opportunities
+        
+        I am actively looking for motivated **Master's students** and potential **PhD candidates** interested in:
+        * Modelling of snow and permafrost.
+        * Physically-based hydrological modeling.
+        * Multi-Modal Comparison of Snow Dynamics in the Nordic Region.
+        * Many more ...
+
+        If you are interested in writing your thesis on these topics, please reach out!
+
+        <br>
+
+        <a href="mailto:johnmohd.wani@unitn.it" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+    design:
+      columns: '1'
     design:
       columns: '1'
   - block: collection
