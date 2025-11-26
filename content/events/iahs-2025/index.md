@@ -21,7 +21,7 @@ publishDate: '2025-10-15T00:00:00Z'
 
 authors: [admin]
 tags: [Snow Hydrology, Forest, GEOtop, SNOWModel]
-featured: false
+featured: true
 image:
   caption: 'Image credit: [**Evan Crouch**](https://www.evancrouch.com/science/)'
   focal_point: Right
