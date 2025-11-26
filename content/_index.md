@@ -94,7 +94,7 @@ sections:
       title: Recent News
       subtitle: ''
       text: ''
-      page_type: post
+      page_type: blog
       count: 5
       filters:
         author: ''
