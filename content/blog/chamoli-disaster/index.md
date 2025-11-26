@@ -18,7 +18,7 @@ tags:
 # THE IMAGE SETUP
 image:
   placement: 1             # 1 = Top of post (Header)
-  caption: 'Photo credit: John Wani'
+  caption: 'Photo credit: Google Earth'
   focal_point: "Smart"
   preview_only: false      # Show on homepage? True/False
   filename: featured.jpg   #
