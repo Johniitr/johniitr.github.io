@@ -1,7 +1,7 @@
 ---
 title: "Master’s Thesis Opportunity: Modelling Snow Dynamics in the Nordic Region"
 subtitle: "Internal Call: Open only to University of Trento Master's students."
-date: 2025-11-26"
+date: '2025-11-26'
 summary: "We are looking for a motivated Master's student to join a cutting-edge project on snowpack dynamics in the Arctic. Includes a potential paid visit to Finland."
 
 categories:
@@ -25,7 +25,7 @@ authors:
 ---
 
 > [!IMPORTANT]
-> ### 🎓 Eligibility Restriction
+> ### Eligibility Restriction
 > **This opportunity is strictly reserved for students currently enrolled at the University of Trento.**
 >
 > Please do not apply if you are not a registered student at UniTrento (C3A /DICAM, etc.).
