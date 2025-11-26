@@ -44,12 +44,11 @@ sections:
         I am actively looking for motivated **Master's students** and potential **PhD candidates** interested in:
         * Modelling of snow and permafrost.
         * Physically-based hydrological modeling.
-        * Multi-Modal Comparison of Snow Dynamics in the Nordic Region.
+        * Multi-Modal Comparison of Snow Dynamics in the Nordic Region. (Masters Thesis open for University of Trento students)
         * Many more...
 
         If you are interested in writing your thesis on these topics, please reach out!
 
-        <br>
         <a href="mailto:johnmohd.wani@unitn.it" class="btn btn-primary">
           <i class="fas fa-envelope"></i> Contact Me
         </a>
