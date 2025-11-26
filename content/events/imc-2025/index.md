@@ -21,4 +21,7 @@ publishDate: '2025-09-20T00:00:00Z'
 authors: [admin]
 tags: [Alps, Po River, SWE]
 featured: true
+image:
+  caption: 'Image credit: [**John Mohd Wani**](https://johniitr.github.io/)'
+  focal_point: Right
 ---
