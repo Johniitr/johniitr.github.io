@@ -124,7 +124,7 @@ skills:
       - name: Playing Cricket
         description: ''
         percent: 90
-        icon: cricket-bat-ball
+        icon: hero/trophy
       - name: Reading
         description: ''
         percent: 70

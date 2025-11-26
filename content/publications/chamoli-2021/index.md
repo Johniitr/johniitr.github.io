@@ -8,8 +8,10 @@ authors:
 - others
 
 date: "2022-07-03"
-doi: "10.1007/s11069-022-05454-0"
 
+hugoblox:
+  ids:
+    doi: "10.1007/s11069-022-05454-0"
 # Publication type:
 # 0 = Uncategorized
 # 1 = Conference paper

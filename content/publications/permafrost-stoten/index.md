@@ -7,8 +7,9 @@ authors:
 - others
 
 date: "2020-02-10"
-doi: "10.1038/s41597-025-04633-5"
-
+hugoblox:
+  ids:
+    doi: "10.1038/s41597-025-04633-5"
 # Publication type:
 # 0 = Uncategorized
 # 1 = Conference paper

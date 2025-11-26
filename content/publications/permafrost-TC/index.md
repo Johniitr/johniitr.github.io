@@ -7,8 +7,10 @@ authors:
 - others
 
 date: "2021-05-18"
-doi: "10.5194/tc-15-2273-2021"
 
+hugoblox:
+  ids:
+    doi: "10.5194/tc-15-2273-2021"
 # Publication type:
 # 0 = Uncategorized
 # 1 = Conference paper

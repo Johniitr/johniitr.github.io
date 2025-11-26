@@ -7,8 +7,10 @@ authors:
 - others
 
 date: "2025-11-07"
-doi: "10.1038/s41597-025-04633-5"
 
+hugoblox:
+  ids:
+    doi: ""
 # Publication type:
 # 0 = Uncategorized
 # 1 = Conference paper
@@ -31,7 +33,7 @@ featured: true
 
 links:
 - name: Download Preprint
-  url: https://zenodo.org/records/11196628
+  url: 
 ---
 
 ## Abstract
