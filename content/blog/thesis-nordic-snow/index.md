@@ -13,10 +13,11 @@ tags:
   - Snow Hydrology
   - HPC
   - Finland
+  - Trento
 
-# Featured Image: Put a snowy image named 'featured.jpg' in this folder!
+# Featured Image
 image:
-  caption: 'Cryosphere in the Nordic region'
+  caption: 'Cryosphere in the Nordic region (AI Generated)'
   focal_point: "Center"
   preview_only: false
 
@@ -38,7 +39,7 @@ We are looking for a highly motivated Master’s student (University of Trento) 
 > ### The Opportunity: One-Month Paid Visit
 > This thesis includes a unique opportunity for international mobility.
 >
-> The successful candidate may be eligible for a **one-month paid research visit** to the **University of Oulu, Finland**, to work directly with the co-supervisor.
+> The successful candidate may be eligible for a **one-month paid research visit** to the **[University of Oulu, Finland](https://www.oulu.fi/en)**, to work directly with the co-supervisor.
 
 ---
 
@@ -63,7 +64,7 @@ You will employ a dual-scale approach:
 You will work in an international research environment.
 
 * **Supervisor:** John Mohd Wani (University of Trento)
-* **Co-Supervisor:** **Dr. Shakir Shabir Dar** (Marie Skłodowska-Curie Postdoctoral Fellow, University of Oulu, Finland). Dr. Dar brings world-class expertise in snow hydrology and modelling.
+* **Co-Supervisor:** **[Dr. Shakir Shabir Dar](https://www.oulu.fi/en/researchers/shaakir-shabir-dar)** (Marie Skłodowska-Curie Postdoctoral Fellow, University of Oulu, Finland). Dr. Dar brings world-class expertise in snow hydrology and modelling.
 
 ## What We Are Looking For
 * **Background:** Civil/Environmental Engineering, Earth Sciences, Hydrology, or relevant fields.
