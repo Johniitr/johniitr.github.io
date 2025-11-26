@@ -44,7 +44,7 @@ sections:
         I am actively looking for motivated **Master's students** and potential **PhD candidates** interested in:
         * Modelling of snow and permafrost.
         * Physically-based hydrological modeling.
-        * [Multi-Modal Comparison of Snow Dynamics in the Nordic Region.](/blog/thesis-nordic-snow/)** (Open Call)
+        * [Multi-Modal Comparison of Snow Dynamics in the Nordic Region.](/blog/thesis-nordic-snow/) (Open Call)
         * Many more...
 
         If you are interested in writing your thesis on these topics, please reach out!
