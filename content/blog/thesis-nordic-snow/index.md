@@ -64,7 +64,7 @@ You will employ a dual-scale approach:
 You will work in an international research environment.
 
 * **Supervisor:** John Mohd Wani (University of Trento)
-* **Co-Supervisor:** **[Dr. Shakir Shabir Dar](https://www.oulu.fi/en/researchers/shaakir-shabir-dar)** (Marie Skłodowska-Curie Postdoctoral Fellow, University of Oulu, Finland). Dr. Dar brings world-class expertise in snow hydrology and modelling.
+* **Co-Supervisor:** **[Dr. Shaakir Shabir Dar](https://www.oulu.fi/en/researchers/shaakir-shabir-dar)** (Marie Skłodowska-Curie Postdoctoral Fellow, University of Oulu, Finland). Dr. Dar brings world-class expertise in snow hydrology and modelling.
 
 ## What We Are Looking For
 * **Background:** Civil/Environmental Engineering, Earth Sciences, Hydrology, or relevant fields.
