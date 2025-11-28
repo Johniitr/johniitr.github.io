@@ -39,7 +39,7 @@ We are looking for a highly motivated Master’s student (University of Trento) 
 > ### The Opportunity: One-Month Paid Visit
 > This thesis includes a unique opportunity for international mobility.
 >
-> The successful candidate may be eligible for a **one-month paid research visit** to the **[University of Oulu, Finland](https://www.oulu.fi/en)**, to work directly with the **[co-supervisor](https://www.oulu.fi/en/researchers/shaakir-shabir-dar)**.
+> The successful candidate may be eligible for a **one-month paid research visit** to the **[University of Oulu, Finland](https://www.oulu.fi/en/research-groups/snow-hydrology-and-modeling)**, to work directly with the **[co-supervisor](https://www.oulu.fi/en/researchers/shaakir-shabir-dar)**.
 
 ---
 
