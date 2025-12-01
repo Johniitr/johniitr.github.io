@@ -68,6 +68,6 @@ In this post, I share my personal collection of foundational readings for beginn
 
 Additionally, you can find well-documented information on the long-term state and changes of mountain permafrost in the Swiss Alps through the **[Swiss Permafrost Monitoring Network](https://www.permos.ch)** (PERMOS). Also, they have documented and compiled **[best practice recommendations](https://doi.org/10.3389/feart.2021.607875)** for the long-term measurement of permafrost temperatures.
 
-Finally the permafrost **[Glossary](https://www.permafrost.org/publication/glossary-of-permafrost-and-related-ground-ice-terms/)** (old) that will give you the definitions of the permafrost related terms.
+Finally the permafrost **[Glossary 2025](https://www.permafrost.org/publication/glossary-of-permafrost-and-related-ground-ice-terms/)** (new) that will give you the definitions of the permafrost related terms.
 
 Don't forget to keep an eye on the **[International Permafrost Association](https://www.permafrost.org/)** (IPA) website for events and other stuff related to permafrost. Also subscribe to the **[Permafrost Young Researcher's Network](https://pyrn.arcticportal.org/)** (PYRN), that promotes the future generation of permafrost researchers under the patronage of IPA.
