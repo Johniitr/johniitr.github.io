@@ -57,7 +57,7 @@ These elevation-dependent changes highlight a fundamental shift in the hydrologi
 
 ### Read the Full Preprint
 
-To know more and see the full analysis, **[Read our preprint](#)**.
+To know more and see the full analysis, **[Read our preprint](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-5520/)**.
 
 **References:**
 <div class="notice--success">
