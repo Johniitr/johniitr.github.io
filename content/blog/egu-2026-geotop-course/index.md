@@ -81,19 +81,9 @@ All materials are open-access under a **CC BY 4.0** license:
 
 | Material | Description | Link |
 |----------|-------------|------|
-| **Presentation slides** | Installation, model overview, configuration | *[Coming soon — will be uploaded after the course]* |
-| **Jupyter notebook** | Output analysis with 14 scientific plots | *[Coming soon]* |
-| **Conda environment** | `environment.yml` for Python setup | *[Coming soon]* |
-
-<!--
-TODO: After the course, replace the placeholder links above with:
-- Link to the PDF/PPTX slides (e.g., hosted on Zenodo or GitHub)
-- Link to the Jupyter notebook (e.g., GitHub repo)
-- Link to the environment.yml
-- Link to the quick reference card
-Example:
-| **Presentation slides** | Installation, model overview | [Download PDF](https://zenodo.org/record/XXXXX) |
--->
+| **Presentation slides** | Installation, model overview, configuration | *[Slides](https://osf.io/v8h9d/files/fks8m)* |
+| **Jupyter notebook** | Output analysis with 14 scientific plots | *[Notebook and Practice Material](https://osf.io/v8h9d/files/e3ws5)* |
+| **Conda environment** | `environment.yml` for Python setup | *[Yml file](https://osf.io/v8h9d/files/e3ws5)* |
 
 ---
 
