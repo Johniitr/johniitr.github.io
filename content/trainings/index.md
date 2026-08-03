@@ -10,20 +10,30 @@ Here you can find information about the training workshops and schools I have or
 ## 📅 Upcoming Events
 
 > [!NOTE]
-> ### 1. Introducing GEOtop and GEOframe (EGU 2026)
->
-> **Date:** May 03-08, 2026  
-> **Location:** EGU 2026, Vienna, Austria  
-> **Role:** Convener  
-> **Topic:** A hands-on course on setting up open-source models (**[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)**) in snow dominated catchments.
->
-> <br>
->
-> > <a href="https://meetingorganizer.copernicus.org/EGU26/session/57905" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Register Now</a>
+> Stay Tuned!
 
 ---
 
 ## Past Events
+
+### 2026
+
+**Energy Balance Modelling of Permafrost Environments in the HKH (ICIMOD)** 
+
+- **Dates:** July 27–29, 2026
+- **Location:** ICIMOD, Kathmandu, Nepal
+- **Details:** Three-day hands-on workshop on permafrost modelling with GEOtop for HKH researchers.
+- **Role:** Instructor
+[Read the blog post](/blog/icimod-2026-permafrost-workshop/) | [Download Material](LINK)
+
+**Introducing GEOtop and GEOframe (EGU 2026)**
+
+- **Date:** May 03-08, 2026  
+- **Location:** EGU 2026, Vienna, Austria  
+- **Role:** Convener
+- **Description:** A hands-on course on setting up open-source models (**[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)**) in snow dominated catchments.
+
+[Read the blog post](/blog/egu-2026-geotop-course/)
 
 ### 2025
 
