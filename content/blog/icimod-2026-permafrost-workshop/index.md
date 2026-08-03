@@ -60,7 +60,6 @@ Permafrost is defined by temperature, not by ice content: ground that remains at
 below 0 °C for two or more consecutive years. That distinction matters
 particularly in the cold-arid trans-Himalaya, where much of the frozen ground
 is coarse and dry — permafrost with very little ice in it is still permafrost.
-
 More boreholes would obviously help, and the region needs them. But three
 things limit what drilling alone can deliver.
 
@@ -153,7 +152,7 @@ To ICIMOD for hosting and organising, to
 hands-on sessions, and to the participants, who asked better questions than I
 was expecting on day one and considerably better ones by day three.
 
-This postdoctoral work of JMW was supported by the **SPACE IT UP** project (ASI Contract
+The postdoctoral work of JMW is supported by the **SPACE IT UP** project (ASI Contract
 n. 2024-5-E.0, CUP Master n. I53D24000060005).
 
 ---

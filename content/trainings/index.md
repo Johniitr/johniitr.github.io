@@ -18,15 +18,16 @@ Here you can find information about the training workshops and schools I have or
 
 ### 2026
 
-**Energy Balance Modelling of Permafrost Environments in the HKH (ICIMOD)** 
+1. **Energy Balance Modelling of Permafrost Environments in the HKH (ICIMOD)** 
 
 - **Dates:** July 27–29, 2026
 - **Location:** ICIMOD, Kathmandu, Nepal
 - **Details:** Three-day hands-on workshop on permafrost modelling with GEOtop for HKH researchers.
 - **Role:** Instructor
+
 [Read the blog post](/blog/icimod-2026-permafrost-workshop/) | [Download Material](LINK)
 
-**Introducing GEOtop and GEOframe (EGU 2026)**
+2. **Introducing GEOtop and GEOframe (EGU 2026)**
 
 - **Date:** May 03-08, 2026  
 - **Location:** EGU 2026, Vienna, Austria  
@@ -37,16 +38,15 @@ Here you can find information about the training workshops and schools I have or
 
 ### 2025
 
-**Introducing GEOtop and GEOframe (IAHS 2025)** * **Role:** Co-organizer  
+1. **Introducing GEOtop and GEOframe (IAHS 2025)** * **Role:** Co-organizer  
 * **Date:** October 08, 2025  
 * **Location:** XIIth IAHS Assembly, Roorkee, India  
 * **Details:** Introducing open source models for hydrological modelling in mountain catchments.  
 
 [Download Slides](LINK_TO_SLIDES) | [Info Here](https://iahs2025.com/SEIGG)
 
-<br>
 
-**Advanced Topics in Snow Hydrology** * **Role:** Co-organizer  
+2. **Advanced Topics in Snow Hydrology** * **Role:** Co-organizer  
 * **Dates:** February 18–21, 2025  
 * **Location:** University of Trento, Italy  
 * **Details:** Focused on Snow Hydrology and Modelling.  
