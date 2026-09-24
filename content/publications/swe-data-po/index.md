@@ -3,22 +3,27 @@ title: "30-years (1991-2021) Snow Water Equivalent Dataset in the Po River Distr
 
 # Authors: Use "admin" for yourself to link to your profile
 authors:
-- M. Dall’Amico
-- S. Tasin
-- F. Di Paolo
+- "Matteo Dall’Amico"
+- Stefano Tasin
+- Federico Di Paolo
+- Marco Brian
+- Paolo Leoni
+- Francesco Tornatore
+- Giuseppe Formetta
 - admin
-- others
+- Riccardo Rigon
+- Gaia Roati
 
-date: "2025-03-20"
+date: "2025-03-04"
 
 hugoblox:
   ids:
     doi: "10.1038/s41597-025-04633-5"
-# Publication type:
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-publication_types: ["2"]
+# Publication type (a CSL type id, in a list):
+# article-journal = Journal article
+# article = Preprint
+# paper-conference = Conference paper
+publication_types: ["article-journal"]
 
 publication: "*Scientific Data*"
 publication_short: "Sci. Data"

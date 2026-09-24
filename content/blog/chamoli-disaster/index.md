@@ -54,11 +54,11 @@ This event serves as a wake-up call for the need for **improved monitoring** of 
 
 ---
 
-<div class="notice--success">
-  <h4>Read the Full Paper</h4>
-  <p><strong>Thayyen, R.J., Wani, J.M., et al. (2022).</strong><br>
-  <em>Hanging glacier avalanche (Raunthigad–Rishiganga) and debris flow disaster on 7 February 2021, Uttarakhand, India: a preliminary assessment.</em><br>
-  Natural Hazards.</p>
-  
-  <a href="https://doi.org/10.1007/s11069-022-05454-0" class="btn btn--inverse">View Publication</a>
-</div>
+> [!TIP] Read the Full Paper
+> **Thayyen, R.J., Mishra, P.K., Jain, S.K., Wani, J.M., Singh, H., Singh, M.K., Yadav, B. (2022).**\
+> *Hanging glacier avalanche (Raunthigad–Rishiganga) and debris flow disaster on 7 February 2021, Uttarakhand, India: a preliminary assessment.*\
+> Natural Hazards.
+>
+> <div class="flex flex-wrap gap-3 mt-4">
+> {{< button url="https://doi.org/10.1007/s11069-022-05454-0" new_tab="true" >}}View Publication{{< /button >}}
+> </div>

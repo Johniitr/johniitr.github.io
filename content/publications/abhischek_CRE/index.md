@@ -10,14 +10,17 @@ authors:
   - Nicole Hanselmann
 
 date: '2026-04-20T00:00:00Z'
-doi: '10.1016/j.coldregions.2026.104950'
+
+hugoblox:
+  ids:
+    doi: '10.1016/j.coldregions.2026.104950'
 
 # Schedule page publish date (NOT the paper's date).
 publishDate: '2026-04-20T00:00:00Z'
 
-# Publication type.
-# 1 = Conference paper, 2 = Journal article, 3 = Preprint, 4 = Report, 5 = Book, 6 = Book section, 7 = Thesis, 8 = Patent
-publication_types: ['2']
+# Publication type (a CSL type id, in a list).
+# article-journal = Journal article, article = Preprint, paper-conference = Conference paper, report = Report, book = Book, chapter = Book section, thesis = Thesis, patent = Patent
+publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: '*Cold Regions Science and Technology*'

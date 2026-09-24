@@ -57,17 +57,7 @@ The Indian Himalaya Region is no longer a blank spot on the permafrost research 
 
 ### Read the Papers
 
-<div class="notice--info">
-  <h4>References</h4>
-  <ul>
-    <li>
-      <strong>Wani, J. M.</strong>, et al. (2023). <em>Permafrost in the Upper Indus Basin: An active layer dynamics.</em> Journal of Earth System Science, 132, 61. <a href="https://doi.org/10.1007/s12040-023-02074-5">[DOI]</a>
-    </li>
-    <li>
-      <strong>Wani, J. M.</strong>, et al. (2021). <em>The surface energy balance in a cold and arid permafrost environment, Ladakh, Himalayas, India</em> The Cryosphere, 15, 2273-2293. <a href="https://doi.org/10.5194/tc-15-2273-2021">[DOI]</a>
-    </li>
-    <li>
-      <strong>Wani, J. M.</strong>, et al. (2020). <em>Single-year thermal regime and inferred permafrost occurrence in the upper Ganglass catchment of the cold-arid Himalaya, Ladakh, India</em> Science of the Total Environment, 703, 134631. <a href="https://doi.org/10.1016/j.scitotenv.2019.134631">[DOI]</a>
-    </li>
-  </ul>
-</div>
+> [!NOTE] References
+> - **Wani, J. M.**, et al. (2023). *Permafrost in the Upper Indus Basin: An active layer dynamics.* Journal of Earth System Science, 132, 61. [[DOI]](https://doi.org/10.1007/s12040-023-02074-5)
+> - **Wani, J. M.**, et al. (2021). *The surface energy balance in a cold and arid permafrost environment, Ladakh, Himalayas, India* The Cryosphere, 15, 2273-2293. [[DOI]](https://doi.org/10.5194/tc-15-2273-2021)
+> - **Wani, J. M.**, et al. (2020). *Single-year thermal regime and inferred permafrost occurrence in the upper Ganglass catchment of the cold-arid Himalaya, Ladakh, India* Science of the Total Environment, 703, 134631. [[DOI]](https://doi.org/10.1016/j.scitotenv.2019.134631)

@@ -49,9 +49,7 @@ sections:
 
         If you are interested in writing your thesis on these topics, please reach out!
 
-        <a href="mailto:johnmohd.wani@unitn.it" class="btn btn-primary">
-          <i class="fas fa-envelope"></i> Contact Me
-        </a>
+        {{< button url="mailto:johnmohd.wani@unitn.it" icon="envelope" >}}Contact Me{{< /button >}}
     design:
       columns: '1'
 
@@ -59,6 +57,8 @@ sections:
     id: papers
     content:
       title: Featured Publications
+      # 0 = show every publication marked `featured: true` (the default would stop at 5)
+      count: 0
       filters:
         folders:
           - publications

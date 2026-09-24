@@ -42,7 +42,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© 2025 John Mohd Wani. All rights reserved.'
+    notice: '© {year} John Mohd Wani. All rights reserved.'
     license:
       enable: false
 

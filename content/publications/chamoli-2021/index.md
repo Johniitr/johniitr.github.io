@@ -3,20 +3,24 @@ title: "Hanging glacier avalanche (Raunthigad–Rishiganga) and debris flow disa
 
 # Authors: Use "admin" for yourself to link to your profile
 authors:
-- R. Thayyen
-- admin 
-- others
+- Renoj J. Thayyen
+- P. K. Mishra
+- Sanjay K. Jain
+- admin
+- Hemant Singh
+- Mritunjay K. Singh
+- Bankim Chandra Yadav
 
 date: "2022-07-03"
 
 hugoblox:
   ids:
     doi: "10.1007/s11069-022-05454-0"
-# Publication type:
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-publication_types: ["2"]
+# Publication type (a CSL type id, in a list):
+# article-journal = Journal article
+# article = Preprint
+# paper-conference = Conference paper
+publication_types: ["article-journal"]
 
 publication: "*Natural Hazards*"
 publication_short: "Nat Hazards"

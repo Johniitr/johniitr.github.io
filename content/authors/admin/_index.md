@@ -58,10 +58,7 @@ education:
     date_start: 2015-01-01
     date_end: 2019-11-23
     summary: |
-      Thesis on _Inferring Permafrost and its Characteristics in the Cold-Arid Himalaya_. Supervised by Prof. CSP Ojha and Renoj J. Thayyen. Published 2 papers in The Cryospshere and SCience of the Total Environment.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
+      Thesis on _Inferring Permafrost and its Characteristics in the Cold-Arid Himalaya_. Supervised by Prof. CSP Ojha and Renoj J. Thayyen. Published 2 papers in *The Cryosphere* and *Science of the Total Environment*.
   - area: MTech Water Resources Engineering
     institution: NIT Hamirpur, India
     icon: ""

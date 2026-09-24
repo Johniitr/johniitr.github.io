@@ -2,6 +2,7 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
+draft: true # Hidden until real projects are added — delete this line to publish
 
 design:
   # Section spacing

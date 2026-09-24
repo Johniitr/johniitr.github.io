@@ -67,15 +67,14 @@ We believe that this dataset fills a critical gap in the scientific understandin
 
 This dataset is open-access and ready for use in climate impact studies like snow droughts, hydrological modeling, and water resource management.
 
-<div class="notice--success">
-  <p><strong>Dall’Amico, M., Tasin, S., Di Paolo, F., Wani, J.M., et al. (2025).</strong><br>
-  <em>30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy.Scientific Data, 12, 374.</em><br>
-  </p>
-  
-  <a href="https://doi.org/10.1038/s41597-025-04633-5" class="btn btn--inverse">View Paper</a> 
-  <a href="https://zenodo.org/records/11196628" class="btn btn--inverse">Download Data</a>
-
-</div>
+> [!TIP] Reference
+> **Dall’Amico, M., Tasin, S., Di Paolo, F., Brian, M., Leoni, P., Tornatore, F., Formetta, G., Wani, J.M., Rigon, R., Roati, G. (2025).**\
+> *30-years (1991-2021) Snow Water Equivalent Dataset in the Po River District, Italy.* *Scientific Data*, 12, 374.
+>
+> <div class="flex flex-wrap gap-3 mt-4">
+> {{< button url="https://doi.org/10.1038/s41597-025-04633-5" new_tab="true" >}}View Paper{{< /button >}}
+> {{< button url="https://zenodo.org/records/11196628" new_tab="true" >}}Download Data{{< /button >}}
+> </div>
 
 > [!NOTE]
 > ### See the Data in Action

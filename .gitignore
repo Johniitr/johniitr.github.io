@@ -45,6 +45,11 @@ node_modules/
 .vscode/
 .idea/
 
+# Claude Code (local notes and settings, kept off GitHub)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
 # ============================================================================
 # Generated Content
 # ============================================================================

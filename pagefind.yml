@@ -1,0 +1,10 @@
+# Pagefind search index settings, read by `pagefind --site public` (npm run build and the deploy workflow).
+# Index only real pages, and only their content: the navbar, the hidden search box, sidebars and the
+# footer repeat on every page and would otherwise match every search and fill the result excerpts.
+glob: "{index.html,experience/index.html,trainings/index.html,blog/*/index.html,publications/*/index.html,events/*/index.html}"
+exclude_selectors:
+  - ".page-header"
+  - ".page-footer"
+  - ".hb-sidebar-container"
+  - ".hb-toc"
+  - "#hb-notification-container"

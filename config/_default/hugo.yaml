@@ -26,7 +26,8 @@ build:
 enableGitInfo: false
 summaryLength: 30
 pagination:
-  pagerSize: 10
+  # Items per list page (Publications, Blog, tags). Kept high so each list stays on one page.
+  pagerSize: 50
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>

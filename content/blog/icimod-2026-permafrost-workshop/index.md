@@ -132,7 +132,7 @@ they had done a sensitivity analysis of a permafrost model in an afternoon.
 
 ## Course material
 
-Everything is open-access under **CC-NC BY 4.0**:
+Everything is open-access under **CC BY-NC 4.0**:
 
 | Material | Contents |
 | --- | --- |

@@ -4,17 +4,20 @@ title: "Single-year thermal regime and inferred permafrost occurrence in the upp
 # Authors: Use "admin" for yourself to link to your profile
 authors:
 - admin
-- others
+- Renoj J. Thayyen
+- Stephan Gruber
+- Chandra Shekhar Prasad Ojha
+- Dorothea Stumm
 
 date: "2020-02-10"
 hugoblox:
   ids:
-    doi: "10.1038/s41597-025-04633-5"
-# Publication type:
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-publication_types: ["2"]
+    doi: "10.1016/j.scitotenv.2019.134631"
+# Publication type (a CSL type id, in a list):
+# article-journal = Journal article
+# article = Preprint
+# paper-conference = Conference paper
+publication_types: ["article-journal"]
 
 publication: "*Science of the Total Environment*"
 publication_short: "STOTEN"
@@ -40,4 +43,4 @@ links:
 
 ## Abstract
 
-This paper presents a long-term snow water equivalent dataset in the Po River District, Italy, spanning from 1991 to 2021 at daily time step and 500 m spatial resolution partially covering the mountain ranges of Alps and Apennines. The data has been generated using a hybrid modelling approach integrating the hydrological modelling conducted with the physically-based GEOtop model, preprocessing of the meteorological data, and assimilation of in-situ snow measurements and Earth Observation snow products to enhance the quality of the model estimates. A rigorous quality assessment of the dataset has been performed at different control points selected based on reliability, quality, and territorial distribution. The point validation between simulated and observed snow depth across control points shows the accuracy of the dataset in simulating the normal and relatively high snow conditions, respectively. Additionally, satellite snow cover maps have been compared with simulated snow depth maps, as a function of elevation and aspect. 2D Validation shows accurate values over time and space, expressed in terms of snowline along the cardinal directions.
+Cold-arid regions of the trans-Himalaya in the Indian Himalayan Region (IHR) is suspected to have a significant area of permafrost. However, information on the ground thermal regime of these permafrost areas is so far not available. This study bridge this knowledge gap by analysing the sub-surface thermal regime of selected sites in the Ganglass catchment, Ladakh range. Near surface ground temperature data recorded during September 2016 to August 2017 using 24-miniature temperature data loggers distributed across 12 plots and covering an elevation range of 4700-5612 m a.s.l. are used in this study. Permafrost characteristics including plausible ranges of thermal offset, active-layer thickness and mean annual ground temperature at 10 m depth were estimated by driving a one-dimensional heat conduction model. Two statistical models were used to map first order estimates of permafrost area in this 15.4 km2 catchment. Study suggest permafrost occurrence at all sites above 4900 m a.s.l. with active-layer thickness ranging from 0.1 to 4.2 m and the mean annual ground surface temperature ranging from between -10.0 and -0.85 °C for these sites. MAAT at these sites range from -4.1 to -8.9 °C and the surface offsets vary from -1.1 to 3.9 °C. Estimated thermal offset range from -0.9 to 0 °C. Both statistical models show comparable results and suggest 95% mean permafrost cover in the catchment above 4727 m a.s.l. These results strongly indicate existence of significant permafrost areas across the high elevations of the cold-arid regions of IHR. So far, permafrost processes are not considered for assessing present and future estimates of water and regional climate and as a causative factor for disasters like debris flows and landslides in the region. This study highlight the need for greater research efforts on Himalayan permafrost to have a comprehensive understanding of Himalayan cryosphere.
