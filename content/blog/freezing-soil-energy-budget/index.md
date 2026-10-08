@@ -14,7 +14,7 @@ image:
 
 Water in soil does not all freeze at 0 °C. It freezes over a range of temperatures, **largest pores first**, and some of it never freezes at all. That unfrozen fraction is not a curiosity. It governs **how frozen ground conducts water and how much latent heat it stores**, and therefore how quickly a freezing front advances, how much water moves toward it, and how a permafrost table responds to a warm summer.
 
-Three mechanisms keep that water liquid: capillarity, dissolved solutes, and adsorption on mineral surfaces. Each is well understood on its own, and each is usually described with a model drawn from a different literature. Our paper, now accepted in *Geotechnical and Geological Engineering*, asks a simple question: what happens if all three are derived from the same starting point?
+Three mechanisms keep that water liquid: capillarity, dissolved solutes, and adsorption on mineral surfaces. Each is well understood on its own, and each is usually described with a model drawn from a different literature. Our paper, now published (open access) in *Geotechnical and Geological Engineering*, asks a simple question: what happens if all three are derived from the same starting point?
 
 ***
 
@@ -43,4 +43,4 @@ Frameworks of this kind rest on assumptions that are usually left implicit: that
 
 ### Read the Full Paper
 
-Wani, J.M., D'Amato, C., Rigon, R. (2026). *The Tricky Water Energy Budget of Freezing Soil: A Thermodynamic Framework for Understanding Phase Changes.* Geotechnical and Geological Engineering. Accepted.
+Wani, J.M., D'Amato, C., Rigon, R. (2026). *The Tricky Water Energy Budget of Freezing Soil: A Thermodynamic Framework for Understanding Phase Changes.* *Geotechnical and Geological Engineering*, 44, 407. [https://doi.org/10.1007/s10706-026-03867-3](https://doi.org/10.1007/s10706-026-03867-3) (open access)
