@@ -45,6 +45,16 @@ node_modules/
 .vscode/
 .idea/
 
+# R (tools/ holds an R script; keep R's history and workspace files private)
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Editor swap and temporary files
+*.swp
+*.tmp
+
 # Claude Code (local notes and settings, kept off GitHub)
 CLAUDE.md
 CLAUDE.local.md
