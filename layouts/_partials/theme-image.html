@@ -1,0 +1,11 @@
+{{- /* Image for a research theme. Context: dict "page" (research page) "theme" "w" (width) "fill" (bool). Figures (plate: true) are shown whole. */ -}}
+{{- $t := .theme -}}
+{{- with .page.Resources.Get $t.image -}}
+  {{- if $t.plate -}}
+  {{- $i := .Resize (printf "%dx webp q82" (cond (gt .Width $.w) $.w .Width)) }}
+  <div class="plate"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $t.image_alt }}" loading="lazy" decoding="async"></div>
+  {{- else -}}
+  {{- $i := .Fill (printf "%dx%d smart webp q80" $.w (div (mul $.w 105) 160)) }}
+  <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $t.image_alt }}" loading="lazy" decoding="async">
+  {{- end -}}
+{{- end -}}

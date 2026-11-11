@@ -1,0 +1,16 @@
+{{- /* Author list with the site owner ("admin") highlighted. Context: dict "page" "max".
+       With max > 0 and more authors than that: first three, the owner if later, then "et al." */ -}}
+{{- $me := site.GetPage "/authors/admin" -}}
+{{- $names := slice -}}{{- $meIdx := -1 -}}
+{{- range $i, $a := .page.Params.authors -}}
+  {{- if eq $a "admin" -}}{{- $names = $names | append (printf `<span class="me">%s</span>` $me.Title) -}}{{- $meIdx = $i -}}
+  {{- else -}}{{- $names = $names | append (htmlEscape $a) -}}{{- end -}}
+{{- end -}}
+{{- $max := .max | default 0 -}}
+{{- if and (gt $max 0) (gt (len $names) $max) -}}
+  {{- $short := first 3 $names -}}
+  {{- if ge $meIdx 3 }}{{ $short = $short | append "…" | append (index $names $meIdx) }}{{ end -}}
+  {{- printf "%s, et al." (delimit $short ", ") | safeHTML -}}
+{{- else -}}
+  {{- delimit $names ", " | safeHTML -}}
+{{- end -}}

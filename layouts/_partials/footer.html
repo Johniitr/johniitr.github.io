@@ -1,0 +1,25 @@
+{{- $me := site.GetPage "/authors/admin" -}}
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <span class="footer__name">{{ site.Title }}</span>
+      <p>{{ site.Params.affiliation_full }}</p>
+      {{- range $me.Params.profiles }}{{ if hasPrefix .url "mailto:" }}
+      <p><a href="{{ .url }}">{{ strings.TrimPrefix "mailto:" .url }}</a></p>
+      {{- end }}{{ end }}
+    </div>
+    <ul aria-label="Profiles">
+      {{- range $me.Params.profiles }}{{ if not (hasPrefix .url "mailto:") }}
+      <li><a href="{{ .url }}" rel="me">{{ partial "functions/profile-label.html" . }}</a></li>
+      {{- end }}{{ end }}
+      <li><a href="{{ "index.xml" | relURL }}">RSS feed</a></li>
+    </ul>
+    <ul aria-label="Site">
+      {{- range site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{- end }}
+      <li><a href="{{ site.Params.cv | relURL }}">CV (PDF)</a></li>
+    </ul>
+    <p class="footer__fine">{{ replace site.Params.copyright "{year}" (string now.Year) }} · {{ site.Params.contour_credit }} · Built with <a href="https://gohugo.io">Hugo</a>, hosted on GitHub Pages.</p>
+  </div>
+</footer>

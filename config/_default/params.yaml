@@ -1,59 +1,25 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Site-wide settings used by the templates in layouts/.
+# Personal details (name, role, links, education, work, skills) live in content/authors/admin/_index.md.
+# Homepage text lives in content/_index.md; research themes in content/research/index.md.
 
-# Appearance
-appearance:
-  mode: system          # Options: system, light, dark
-  color: indigo           # Options: minimal, blue, navy, forest, indigo, rose, violet
-                        # 'blue' or 'navy' fits your Snow/Ice theme best.
+description: "John Mohd Wani is a postdoctoral researcher at C3A, University of Trento, studying mountain snow and permafrost with field observations and physically based models (GEOtop, GEOframe)."
 
-# SEO (Search Engine Optimization)
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: 'University of Trento'
-    description: 'Personal academic website of John Mohd Wani, Cryosphere Researcher specializing in Snow Hydrology and Permafrost Modeling.'
-    twitter: ''         #
+# Short affiliation shown next to the job title in the homepage header.
+affiliation_short: "C3A, University of Trento"
+# Full affiliation for the footer.
+affiliation_full: "C3A – Center Agriculture Food Environment, University of Trento, Italy"
 
-  analytics:
-    google_analytics: '' # Google Analytics Tracking ID (e.g., UA-XXXXXXXXX-X or G-XXXXXXXXXX)
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
+# CV download (a file in static/).
+cv: uploads/resume.pdf
 
-# Site header
-header:
-  navbar:
-    enable: true
-    block: 'navbar'
-    fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true # Allows visitors to toggle Dark/Light mode
-    logo:
-      text: 'John Mohd Wani' # <IMPORTANT: This changes the top-left name
+# Footer copyright; {year} is replaced with the year the site is built.
+copyright: "© {year} John Mohd Wani"
 
-# Site footer
-footer:
-  copyright:
-    notice: '© {year} John Mohd Wani. All rights reserved.'
-    license:
-      enable: false
+# Default image for link previews (social media, chat apps), in static/.
+og_image: images/og-default.jpg
 
-# Localization
-locale:
-  date_format: 'Jan 2, 2006' # US Format. Change to '2 Jan 2006' for European style.
-  time_format: '3:04 PM'
+# Credit for the contour artwork in the header and footer.
+contour_credit: "Contour lines: the Ladakh Range above Leh, from NASA SRTM elevation data (AWS Terrain Tiles)."
 
-# Site features
-features:
-  math:
-    enable: true         # Changed to TRUE so equations render!
-  privacy_pack:
-    enable: false
+# Date format for the whole site (Go layout: 2 Jan 2006).
+date_format: "2 Jan 2006"

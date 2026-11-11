@@ -1,0 +1,20 @@
+{{- /* Publications list: all papers grouped by year, with research-theme filters. */ -}}
+{{ define "masthead" }}
+{{- $me := site.GetPage "/authors/admin" }}
+{{- $actions := "" }}
+{{- range $me.Params.profiles }}{{ if in (slice "academicons/google-scholar" "academicons/orcid") .icon }}
+{{- $actions = printf `%s<a class="btn ghost" href="%s">%s</a>` $actions .url (partial "functions/profile-label.html" .) }}
+{{- end }}{{ end }}
+{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%d publications" (len .RegularPages)) "lede" (.Params.summary | default "") "actions" ($actions | safeHTML)) }}
+{{ end }}
+{{ define "pagefind" }} data-pagefind-ignore="all"{{ end }}
+{{ define "main" }}
+<div class="page"><div class="wrap">
+  {{ partial "filters.html" (dict "target" "pub-list" "pages" .RegularPages) }}
+  <div id="pub-list">
+  {{- range .RegularPages.GroupByDate "2006" }}
+    <section class="year-group" data-group aria-label="{{ .Key }}"><h2>{{ .Key }}</h2><div>{{ range .Pages }}{{ partial "pub-row.html" . }}{{ end }}</div></section>
+  {{- end }}
+  </div>
+</div></div>
+{{ end }}

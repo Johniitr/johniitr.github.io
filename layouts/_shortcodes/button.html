@@ -1,0 +1,8 @@
+{{- /* Button link inside posts: {{< button url="https://…" new_tab="true" >}}Text{{< /button >}}
+       Optional: style="secondary|outline|ghost" (drawn as an outline button), icon="mail". */ -}}
+{{- $url := .Get "url" -}}
+{{- $text := .Get "text" | default (.Inner | strings.TrimSpace) -}}
+{{- $newTab := eq (printf "%v" (.Get "new_tab")) "true" -}}
+{{- $style := .Get "style" | default "primary" -}}
+<a class="btn{{ if ne $style "primary" }} ghost{{ end }}" href="{{ $url }}"{{ if $newTab }} target="_blank" rel="noopener"{{ end }}>{{ with .Get "icon" }}{{ partial "icon.html" . }}{{ end }}{{ $text | markdownify }}</a>
+{{- /**/ -}}

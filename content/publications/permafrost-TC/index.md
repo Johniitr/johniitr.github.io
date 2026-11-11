@@ -20,7 +20,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*The Cryosphere*"
-publication_short: "TC"
+publication_short: "The Cryosphere"
 
 # Tags help filter publications
 tags:

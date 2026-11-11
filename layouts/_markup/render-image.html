@@ -1,0 +1,12 @@
+{{- /* Markdown images: page-bundle images are resized and served as WebP with a phone-sized variant. */ -}}
+{{- $src := .Destination -}}
+{{- $res := .Page.Resources.Get $src -}}
+{{- if and $res (in (slice "image/jpeg" "image/png" "image/webp") $res.MediaType.Type) -}}
+  {{- $w := cond (gt $res.Width 1440) 1440 $res.Width -}}
+  {{- $big := $res.Resize (printf "%dx webp q82" $w) -}}
+  {{- $small := $big -}}
+  {{- if gt $w 720 }}{{ $small = $res.Resize "720x webp q80" }}{{ end -}}
+  <img src="{{ $big.RelPermalink }}" srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $big.RelPermalink }} {{ $big.Width }}w" sizes="(max-width: 760px) 100vw, 720px" width="{{ $big.Width }}" height="{{ $big.Height }}" alt="{{ .PlainText }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- else -}}
+  <img src="{{ $src | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}

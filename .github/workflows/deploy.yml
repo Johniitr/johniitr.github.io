@@ -46,7 +46,7 @@ jobs:
       run: |
         # Install Tailwind CLI if package.json exists
         if [ -f "package.json" ]; then
-          echo "Installing Tailwind dependencies..."
+          echo "Installing Pagefind (site search)..."
           pnpm install || npm install
         fi
 
@@ -63,8 +63,7 @@ jobs:
           /tmp/hugo_cache_runner/
           node_modules/
           modules/*/node_modules/
-        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
-          '**/pnpm-lock.yaml') }}
+        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('package.json', 'package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-hugo-deps-
 

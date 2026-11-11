@@ -1,0 +1,37 @@
+{{- /* One publication: abstract, figure, details, related papers. Google Scholar tags are added in head.html. */ -}}
+{{ define "masthead" }}
+{{- $types := .Params.publication_types | default (slice "article-journal") }}
+{{- $typeLabel := cond (eq (index $types 0) "article") "Preprint" "Journal article" }}
+{{- $meta := printf `<span>%s</span><span>Published %s</span>` (partial "functions/venue.html" .) (.Date.Format site.Params.date_format) }}
+{{ partial "masthead.html" (dict "page" . "class" "masthead--paper" "eyebrow" (printf "%s · %d" $typeLabel .Date.Year) "authors" (partial "authors.html" (dict "page" . "max" 0)) "meta" ($meta | safeHTML) "actions" (partial "pub-actions.html" (dict "page" . "style" "buttons"))) }}
+{{ end }}
+{{ define "main" }}
+{{- $themes := partial "functions/pub-themes.html" . }}
+{{- $types := .Params.publication_types | default (slice "article-journal") }}
+{{- $doi := "" }}{{ with .Params.hugoblox }}{{ with .ids }}{{ $doi = .doi | default "" }}{{ end }}{{ end }}
+<div class="page"><div class="wrap layout-2">
+  <article>
+    {{- with .Resources.GetMatch "featured.*" }}
+    {{- $i := .Resize (printf "%dx webp q82" (cond (gt .Width 1400) 1400 .Width)) }}
+    <figure class="paper-fig"><div class="plate"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="Figure from the paper"></div>{{ with $.Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>
+    {{- end }}
+    <div class="prose">{{ .Content }}</div>
+    {{- with .GetTerms "tags" }}<div class="tags" style="margin-top:36px">{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>{{ end }}
+  </article>
+  <aside class="aside" data-pagefind-ignore>
+    <div><h2>Details</h2><ul class="facts">
+      <li><span>Type</span><b>{{ cond (eq (index $types 0) "article") "Preprint" "Journal article" }}</b></li>
+      <li><span>Published in</span><b>{{ partial "functions/venue.html" . }}</b></li>
+      <li><span>Date</span><b>{{ .Date.Format site.Params.date_format }}</b></li>
+      {{- with $doi }}<li><span>DOI</span><b><a href="https://doi.org/{{ . }}">{{ . }}</a></b></li>{{ end }}
+    </ul></div>
+    {{- $rel := slice }}
+    {{- range (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+      {{- if and (ne .RelPermalink $.RelPermalink) (gt (len (intersect $themes (partial "functions/pub-themes.html" .))) 0) }}{{ $rel = $rel | append . }}{{ end }}
+    {{- end }}
+    {{- with first 4 $rel }}
+    <div><h2>Related publications</h2><ul class="related">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mono">{{ .Date.Year }} · {{ partial "functions/pub-short.html" . }}</span></li>{{ end }}</ul></div>
+    {{- end }}
+  </aside>
+</div></div>
+{{ end }}

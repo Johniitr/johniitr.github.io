@@ -20,7 +20,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Science of the Total Environment*"
-publication_short: "STOTEN"
+publication_short: "Sci. Total Environ."
 
 # Tags help filter publications
 tags:

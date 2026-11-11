@@ -1,0 +1,6 @@
+{{ define "masthead" }}
+{{- $a := printf `<a class="btn" href="%s">Home</a><a class="btn ghost" href="%s">Publications</a><a class="btn ghost" href="%s">Blog</a><button class="btn ghost" type="button" data-search>Search</button>` ("" | relURL) ("publications/" | relURL) ("blog/" | relURL) }}
+{{ partial "masthead.html" (dict "page" . "class" "notfound" "eyebrow" "Error 404" "title" "Page not found" "lede" "The page you were looking for doesn’t exist, or it moved when this site was redesigned." "actions" ($a | safeHTML)) }}
+{{ end }}
+{{ define "pagefind" }} data-pagefind-ignore="all"{{ end }}
+{{ define "main" }}{{ end }}

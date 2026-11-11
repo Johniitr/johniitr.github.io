@@ -1,0 +1,10 @@
+{{- /* Research-theme ids a publication belongs to: a theme matches when the paper shares a tag with the
+       theme's tag list in content/research/index.md. No need to label papers by hand. */ -}}
+{{- $ids := slice -}}
+{{- $tags := .Params.tags | default slice -}}
+{{- with site.GetPage "/research" -}}
+  {{- range .Params.themes -}}
+    {{- if gt (len (intersect (.tags | default slice) $tags)) 0 }}{{ $ids = $ids | append .id }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $ids -}}

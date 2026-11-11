@@ -24,7 +24,7 @@ publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: '*Cold Regions Science and Technology*'
-publication_short: ''
+publication_short: "Cold Reg. Sci. Technol."
 
 # Summary. An optional shortened abstract.
 summary: A novel GEOtop-MATLAB framework for automated calibration and sensitivity analysis of coupled hydro-thermal permafrost models, applied to three boreholes near Hornsund, Svalbard.

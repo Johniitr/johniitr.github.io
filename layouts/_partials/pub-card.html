@@ -1,0 +1,15 @@
+{{- /* Publication card (homepage). Context: the publication page. */ -}}
+<article class="card" data-k="{{ delimit (partial "functions/pub-themes.html" .) " " }}">
+  {{- with .Resources.GetMatch "featured.*" }}
+  {{- $i := .Fit "720x405 webp q80" }}
+  <div class="plate"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async"></div>
+  {{- else }}
+  <div class="card__ph" aria-hidden="true"></div>
+  {{- end }}
+  <div class="card__body">
+    <span class="card__kicker">{{ .Date.Year }} · {{ partial "functions/pub-short.html" . }}</span>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="authors">{{ partial "authors.html" (dict "page" . "max" 5) }}</p>
+    {{ partial "pub-actions.html" (dict "page" .) }}
+  </div>
+</article>

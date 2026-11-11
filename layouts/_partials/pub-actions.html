@@ -1,0 +1,27 @@
+{{- /* Links for a publication: DOI, open-access PDF, data, blog post, Cite.
+       Context: dict "page" "style" ("tags" = small, default; "buttons" = large, for the paper's own page). */ -}}
+{{- $p := .page -}}
+{{- $big := eq .style "buttons" -}}
+{{- $doi := "" }}{{ with $p.Params.hugoblox }}{{ with .ids }}{{ $doi = .doi | default "" }}{{ end }}{{ end -}}
+{{- $doiURL := printf "https://doi.org/%s" $doi -}}
+{{- $items := slice -}}
+{{- if $doi }}{{ $items = $items | append (dict "label" (cond $big "Read the paper" "DOI") "url" $doiURL "primary" true) }}{{ end -}}
+{{- range $p.Params.links -}}
+  {{- if eq .type "pdf" -}}{{- $items = $items | append (dict "label" "PDF · open access" "url" .url) -}}
+  {{- else if and .url (ne .url $doiURL) -}}
+    {{- $name := .name | default "" -}}
+    {{- $label := $name | default .type | default "Link" -}}
+    {{- if in $name "Data" }}{{ $label = "Data" }}{{ else if in $name "Blog" }}{{ $label = "Blog post" }}{{ end -}}
+    {{- $items = $items | append (dict "label" $label "url" .url) -}}
+  {{- end -}}
+{{- end -}}
+{{- $bib := $p.Resources.Get "cite.bib" -}}
+{{- if $big -}}
+  {{- range $items }}<a class="btn{{ if not .primary }} ghost{{ end }}" href="{{ .url }}">{{ .label }}</a>{{ end -}}
+  {{- with $bib }}<button class="btn ghost" type="button" data-cite="{{ .RelPermalink }}">{{ partial "icon.html" "quote" }} Cite</button>{{ end -}}
+{{- else -}}
+  <div class="acts">
+  {{- range $items }}<a class="tag" href="{{ .url }}">{{ .label }}</a>{{ end -}}
+  {{- with $bib }}<button class="tag" type="button" data-cite="{{ .RelPermalink }}">Cite</button>{{ end -}}
+  </div>
+{{- end -}}

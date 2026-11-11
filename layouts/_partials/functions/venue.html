@@ -1,0 +1,8 @@
+{{- /* "Journal, volume, pages" for a publication, with the journal in italics. Volume/pages come from cite.bib. */ -}}
+{{- $j := .Params.publication | default "" | markdownify -}}
+{{- $vol := partial "functions/bib-field.html" (dict "page" . "field" "volume") -}}
+{{- $pp := replace (partial "functions/bib-field.html" (dict "page" . "field" "pages")) "--" "–" -}}
+{{- $out := $j -}}
+{{- with $vol }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
+{{- with $pp }}{{ $out = printf "%s, %s" $out . }}{{ end -}}
+{{- return ($out | safeHTML) -}}

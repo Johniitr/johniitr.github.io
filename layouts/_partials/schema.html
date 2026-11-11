@@ -1,0 +1,22 @@
+{{- /* Structured data (schema.org JSON-LD) so search engines understand who the site is about and what each page is. */ -}}
+{{- $me := site.GetPage "/authors/admin" -}}
+{{- $sameAs := slice -}}
+{{- range $me.Params.profiles }}{{ if not (hasPrefix .url "mailto:") }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end -}}
+{{- $person := dict "@type" "Person" "name" $me.Title "url" site.Home.Permalink "jobTitle" ($me.Params.role | default "") "sameAs" $sameAs
+    "affiliation" (dict "@type" "Organization" "name" site.Params.affiliation_short) -}}
+{{- with $me.Resources.Get "portrait.jpg" }}{{ $person = merge $person (dict "image" (.Fill "600x600 Center jpg q82").Permalink) }}{{ end -}}
+{{- if .IsHome -}}
+{{- $data := merge (dict "@context" "https://schema.org") $person }}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "publications") -}}
+{{- $authors := slice -}}
+{{- range .Params.authors }}{{ $authors = $authors | append (dict "@type" "Person" "name" (cond (eq . "admin") $me.Title .)) }}{{ end -}}
+{{- $art := dict "@context" "https://schema.org" "@type" "ScholarlyArticle" "headline" .Title "name" .Title "author" $authors
+    "datePublished" (.Date.Format "2006-01-02") "url" .Permalink
+    "isPartOf" (dict "@type" "Periodical" "name" (.Params.publication | default "" | markdownify | plainify)) -}}
+{{- with .Params.hugoblox }}{{ with .ids }}{{ with .doi }}{{ $art = merge $art (dict "sameAs" (printf "https://doi.org/%s" .) "identifier" (dict "@type" "PropertyValue" "propertyID" "DOI" "value" .)) }}{{ end }}{{ end }}{{ end }}
+<script type="application/ld+json">{{ $art | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "blog") -}}
+{{- $post := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "datePublished" (.Date.Format "2006-01-02") "url" .Permalink "author" $person -}}
+<script type="application/ld+json">{{ $post | jsonify | safeJS }}</script>
+{{- end -}}

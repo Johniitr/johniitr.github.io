@@ -1,12 +1,4 @@
 ---
-title: Publications
-cms_exclude: true
-
-# View.
-view: citation
-
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+title: "Publications"
+summary: "Journal articles and preprints, newest first. Filter by research theme, open a paper for its abstract, or use *Cite* to copy a BibTeX reference."
 ---

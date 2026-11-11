@@ -1,0 +1,15 @@
+{{- /* Search (Pagefind, loaded only when opened) and the "Cite" dialog. */ -}}
+<dialog id="search-dialog" aria-labelledby="search-title" data-base="{{ "pagefind/" | relURL }}">
+  <div class="dlg">
+    <div class="dlg__head"><h2 id="search-title">Search</h2><button class="dlg__close" type="button" data-close aria-label="Close search">{{ partial "icon.html" "close" }}</button></div>
+    <div id="search"></div>
+    <p class="search-msg" id="search-msg">Loading search…</p>
+  </div>
+</dialog>
+<dialog id="cite-dialog" aria-labelledby="cite-title">
+  <div class="dlg">
+    <div class="dlg__head"><h2 id="cite-title">Cite this publication</h2><button class="dlg__close" type="button" data-close aria-label="Close">{{ partial "icon.html" "close" }}</button></div>
+    <pre tabindex="0"></pre>
+    <div class="buttons"><button class="btn" type="button" data-copy>Copy BibTeX</button><a class="btn ghost" data-download download href="#">Download .bib</a></div>
+  </div>
+</dialog>

@@ -1,113 +1,41 @@
 ---
-# Leave the homepage title empty to use the site title
-title: ''
-date: 2022-10-24
-type: landing
+# Homepage text. The layout is layouts/home.html; your name, role, photo and links come from
+# content/authors/admin/_index.md, and the research themes from content/research/index.md.
+title: "John Mohd Wani"
 
-design:
-  # Default section spacing
-  spacing: '6rem'
+# The headline under your name. *Asterisks* make words italic (shown in the accent colour).
+statement: "I study how mountain *snow and permafrost* respond to a warming climate, and what that means for water and hazards downstream."
 
-sections:
-  - block: resume-biography-3
-    content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
-    design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
-      # Avatar customization
-      avatar:
-        size: medium
-        shape: circle
-  
-  - block: markdown
-    content:
-      title: 'My Research'
-      subtitle: ''
-      text: |-
-        I am an early career researcher focused on cryosphere, particularly snow and permafrost processes. My research addresses the fundamental challenge of quantifying and predicting the response of the cryosphere (permafrost, snow) to climate change and its impact on water resources and natural hazards. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
+# Places shown along the bottom of the header (coordinates are optional).
+sites:
+  - name: "Ladakh Range"
+    coords: "34.2°N 77.6°E"
+  - name: "Po River District"
+    coords: "Northern Italy"
+  - name: "Hornsund, Svalbard"
+    coords: "77.0°N 15.5°E"
+  - name: "Trento"
+    coords: "46.1°N 11.1°E"
 
-        ---
+# The four numbers under the header. {publications} and {first_author} are counted automatically
+# from content/publications/; anything else is shown as typed.
+stats:
+  - value: "{publications}"
+    label: "publications"
+  - value: "{first_author}"
+    label: "as first author"
+  - value: "30 yr"
+    label: "open daily snow dataset (1991–2021)"
+  - value: "4,727 m"
+    label: "high-altitude field site, Ladakh"
 
-        ### Supervision & Opportunities
-        
-        I am actively looking for motivated **Master's students** and potential **PhD candidates** interested in:
-        * Modelling of snow and permafrost.
-        * Physically-based hydrological modeling.
-        * [Multi-Modal Comparison of Snow Dynamics in the Nordic Region.](/blog/thesis-nordic-snow/) (Open Call)
-        * Many more...
-
-        If you are interested in writing your thesis on these topics, please reach out!
-
-        {{< button url="mailto:johnmohd.wani@unitn.it" icon="envelope" >}}Contact Me{{< /button >}}
-    design:
-      columns: '1'
-
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      # 0 = show every publication marked `featured: true` (the default would stop at 5)
-      count: 0
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      page_type: blog
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      offset: 0
-      order: desc
-    design:
-      view: card
-      spacing:
-        padding: [0, 0, 0, 0]
+# The box near the bottom of the homepage.
+callout:
+  eyebrow: "Supervision & opportunities"
+  title: "Looking for Master’s and PhD students"
+  text: |
+    I am looking for motivated Master’s students and potential PhD candidates interested in modelling snow and permafrost and in physically based hydrological modelling. Open now: a Master’s thesis on [snow dynamics in the Nordic region](/blog/thesis-nordic-snow/).
+  button:
+    text: "Read the open call"
+    url: "/blog/thesis-nordic-snow/"
 ---

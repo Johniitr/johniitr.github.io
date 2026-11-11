@@ -1,0 +1,7 @@
+<li class="vl" id="{{ anchorize (printf "%s-%s" .title (.start.Format "2006-01")) }}">
+  <span class="mono">{{ partial "functions/date-range.html" (dict "start" .date "end" .date_end) }}</span>
+  <h3>{{ .title }}</h3>
+  <p class="where">{{ .location }}</p>
+  {{- with .details }}<p>{{ . | markdownify }}</p>{{ end }}
+  <div class="row-chips">{{ with .role }}<span class="chip">{{ . }}</span>{{ end }}{{ range .links }}<a class="tag" href="{{ .url }}">{{ .name }}</a>{{ end }}</div>
+</li>

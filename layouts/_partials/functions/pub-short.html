@@ -1,0 +1,3 @@
+{{- /* Short journal name for compact labels: publication_short, else the full name, without markdown. */ -}}
+{{- $s := .Params.publication_short | default .Params.publication | default "" | markdownify | plainify -}}
+{{- return (replaceRE `\s*\[preprint\]` "" $s | strings.TrimSpace) -}}

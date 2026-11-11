@@ -1,63 +1,61 @@
 ---
 title: "Workshops & Training"
-summary: "Information about the training workshops and schools I have organized or contributed to."
+summary: "Training workshops and schools I have organised or taught, mostly hands-on courses on open-source, physically based models for snow, permafrost and mountain hydrology."
 date: 2025-11-24
-type: page
+layout: trainings
+
+# Shown when no entry below is in the future.
+upcoming_note: "New workshops and courses will be announced here. Stay tuned!"
+
+# One entry per workshop or course, any order (the page sorts them, newest first).
+# date / date_end: YYYY-MM-DD (date_end is optional). Links are optional.
+entries:
+  - title: "Energy Balance Modelling of Permafrost Environments in the HKH"
+    date: "2026-07-27"
+    date_end: "2026-07-29"
+    location: "ICIMOD, Kathmandu, Nepal"
+    role: "Instructor"
+    details: "Three-day hands-on workshop on permafrost modelling with GEOtop for researchers from the Hindu Kush Himalaya."
+    links:
+      - name: "Read the blog post"
+        url: "/blog/icimod-2026-permafrost-workshop/"
+
+  - title: "Introducing GEOtop and GEOframe"
+    date: "2026-05-03"
+    date_end: "2026-05-08"
+    location: "EGU General Assembly 2026, Vienna, Austria"
+    role: "Convener"
+    details: "A hands-on course on setting up open-source models ([GEOtop](https://github.com/geotopmodel/geotop), [GEOframe](https://github.com/geoframecomponents)) in snow-dominated catchments."
+    links:
+      - name: "Read the blog post"
+        url: "/blog/egu-2026-geotop-course/"
+
+  - title: "Introducing GEOtop and GEOframe"
+    date: "2025-10-08"
+    location: "XII IAHS Scientific Assembly, Roorkee, India"
+    role: "Co-organizer"
+    details: "Introducing open-source models for hydrological modelling in mountain catchments."
+    links:
+      - name: "Session information"
+        url: "https://iahs2025.com/SEIGG"
+
+  - title: "Advanced Topics in Snow Hydrology"
+    date: "2025-02-18"
+    date_end: "2025-02-21"
+    location: "University of Trento, Italy"
+    role: "Co-organizer"
+    details: "Focused on snow hydrology and modelling."
+    links:
+      - name: "Download slides"
+        url: "https://osf.io/ngx5u/overview"
+
+  - title: "Recent Advances in Hydrological Modelling"
+    date: "2024-07-25"
+    date_end: "2024-07-31"
+    location: "IIT Bombay, India"
+    role: "Co-organizer & Instructor"
+    details: "Taught the GEOframe model to participants."
+    links:
+      - name: "Download slides"
+        url: "https://osf.io/m3dyc/overview"
 ---
-
-Here you can find information about the training workshops and schools I have organized or contributed to.
-
-## 📅 Upcoming Events
-
-> [!NOTE]
-> Stay Tuned!
-
----
-
-## Past Events
-
-### 2026
-
-1. **Energy Balance Modelling of Permafrost Environments in the HKH (ICIMOD)**
-   - **Role:** Instructor
-   - **Dates:** July 27–29, 2026
-   - **Location:** ICIMOD, Kathmandu, Nepal
-   - **Details:** Three-day hands-on workshop on permafrost modelling with GEOtop for HKH researchers.
-
-   [Read the blog post](/blog/icimod-2026-permafrost-workshop/)
-
-2. **Introducing GEOtop and GEOframe (EGU 2026)**
-   - **Role:** Convener
-   - **Date:** May 03-08, 2026
-   - **Location:** EGU 2026, Vienna, Austria
-   - **Description:** A hands-on course on setting up open-source models (**[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)**) in snow dominated catchments.
-
-   [Read the blog post](/blog/egu-2026-geotop-course/)
-
-### 2025
-
-1. **Introducing GEOtop and GEOframe (IAHS 2025)**
-   - **Role:** Co-organizer
-   - **Date:** October 08, 2025
-   - **Location:** XIIth IAHS Assembly, Roorkee, India
-   - **Details:** Introducing open source models for hydrological modelling in mountain catchments.
-
-   [Info Here](https://iahs2025.com/SEIGG)
-
-2. **Advanced Topics in Snow Hydrology**
-   - **Role:** Co-organizer
-   - **Dates:** February 18–21, 2025
-   - **Location:** University of Trento, Italy
-   - **Details:** Focused on Snow Hydrology and Modelling.
-
-   [Download Slides](https://osf.io/ngx5u/overview)
-
-### 2024
-
-1. **Recent Advances in Hydrological Modelling**
-   - **Role:** Co-organizer & Instructor
-   - **Dates:** July 25–31, 2024
-   - **Location:** IIT Bombay, India
-   - **Details:** Taught GEOframe model to participants.
-
-   [Download Slides](https://osf.io/m3dyc/overview)

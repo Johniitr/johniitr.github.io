@@ -1,0 +1,13 @@
+{{- /* GitHub-style alerts: > [!NOTE], [!TIP], [!IMPORTANT], [!WARNING], [!CAUTION]; text after the marker is a custom title. */ -}}
+{{- if eq .Type "alert" -}}
+{{- $type := lower .AlertType -}}
+{{- $title := .AlertTitle | default (title $type) -}}
+<aside class="callout callout--{{ $type }}" role="note">
+<p class="callout__title">{{ partial "icon.html" (printf "alert-%s" $type) }}{{ $title }}</p>
+{{ .Text }}
+</aside>
+{{- else -}}
+<blockquote>
+{{ .Text }}
+</blockquote>
+{{- end -}}

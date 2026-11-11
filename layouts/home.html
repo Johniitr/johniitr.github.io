@@ -1,0 +1,113 @@
+{{- /* Homepage ("Contour" layout). Text: content/_index.md. Research themes: content/research/index.md.
+       Profile (name, role, photo, links): content/authors/admin/. Numbers marked {publications} and
+       {first_author} in content/_index.md are counted from the publications, never typed. */ -}}
+{{ define "masthead" }}
+{{- $me := site.GetPage "/authors/admin" }}
+<header class="masthead masthead--home on-dark">
+  <div class="masthead__art" aria-hidden="true"></div>
+  <div class="wrap">
+    {{ partial "nav.html" . }}
+    <section class="hero" aria-labelledby="hero-name">
+      <div>
+        <p class="eyebrow">{{ $me.Params.role }} · {{ site.Params.affiliation_short }}</p>
+        <h1 class="hero__name" id="hero-name">{{ site.Title }}</h1>
+        <p class="hero__statement">{{ .Params.statement | markdownify }}</p>
+        <div class="hero__actions">
+          <a class="btn" href="{{ "research/" | relURL }}">Explore my research {{ partial "icon.html" "arrow" }}</a>
+          <a class="btn ghost" href="{{ "publications/" | relURL }}">Publications</a>
+          <a class="btn ghost" href="{{ site.Params.cv | relURL }}">{{ partial "icon.html" "doc" }} CV</a>
+        </div>
+      </div>
+      {{- with $me.Resources.Get "portrait.jpg" }}
+      {{- $i := .Fill "500x500 Center webp q82" }}
+      <figure class="hero__pic"><img src="{{ $i.RelPermalink }}" width="250" height="250" alt="Portrait of {{ site.Title }}" fetchpriority="high"></figure>
+      {{- end }}
+    </section>
+    <div class="ticker" aria-label="Where I work">
+      {{- range .Params.sites }}<span><b>{{ .name }}</b>{{ .coords }}</span>{{ end }}
+      <span class="credit">Contours: Ladakh Range above Leh</span>
+    </div>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+{{- $pubs := where site.RegularPages "Section" "publications" }}
+{{- $first := 0 }}{{ range $pubs }}{{ if eq (index .Params.authors 0) "admin" }}{{ $first = add $first 1 }}{{ end }}{{ end }}
+<section class="stats" aria-label="At a glance"><div class="wrap">
+  {{- range .Params.stats }}
+  <div class="stat"><b>{{ replace (replace .value "{publications}" (string (len $pubs))) "{first_author}" (string $first) }}</b><span>{{ .label }}</span></div>
+  {{- end }}
+</div></section>
+
+{{- $research := site.GetPage "/research" }}
+<section class="section" aria-labelledby="h-research"><div class="wrap">
+  <div class="shead"><h2 id="h-research">Research</h2><a href="{{ $research.RelPermalink }}">About my research →</a></div>
+  <div class="rows">
+    {{- range $i, $t := $research.Params.themes }}
+    <article class="row">
+      <figure class="row__media">{{ partial "theme-image.html" (dict "page" $research "theme" $t "w" 960) }}</figure>
+      <div>
+        <span class="row__n" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+        <h3><a href="{{ $research.RelPermalink }}#{{ $t.id }}">{{ $t.title }}</a></h3>
+        <p>{{ $t.summary | markdownify }}</p>
+        {{- $key := slice }}
+        {{- range $t.key_papers }}{{ with site.GetPage (printf "/publications/%s" .) }}{{ $key = $key | append . }}{{ end }}{{ end }}
+        {{- if not $key }}{{ $key = first 3 (partial "functions/theme-pubs.html" $t) }}{{ end }}
+        <div class="chips">{{ range $key }}<a class="chip" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ partial "functions/pub-short.html" . }} {{ .Date.Year }}</a>{{ end }}</div>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</div></section>
+
+{{- $featured := (where $pubs "Params.featured" true).ByDate.Reverse }}
+<section class="section section--tight" aria-labelledby="h-pubs" data-pagefind-ignore><div class="wrap">
+  <div class="shead"><h2 id="h-pubs">Selected publications</h2><a href="{{ "publications/" | relURL }}">All {{ len $pubs }} publications →</a></div>
+  {{ partial "filters.html" (dict "target" "home-pubs" "pages" $featured) }}
+  <div class="cards" id="home-pubs">{{ range $featured }}{{ partial "pub-card.html" . }}{{ end }}</div>
+</div></section>
+
+{{- /* Talks and trainings together, newest first. A talk on the same start date as a training
+       (e.g. a short course listed in both) is shown once. */}}
+{{- $trainings := site.GetPage "/trainings" }}
+{{- $items := slice }}{{ $tdates := slice }}
+{{- range $trainings.Params.entries }}
+  {{- $d := time.AsTime .date }}
+  {{- $tdates = $tdates | append ($d.Format "2006-01-02") }}
+  {{- $items = $items | append (dict "date" $d "title" .title "where" .location "chip" .role "url" (printf "%s#%s" $trainings.RelPermalink (anchorize (printf "%s-%s" .title ($d.Format "2006-01"))))) }}
+{{- end }}
+{{- range where site.RegularPages "Section" "events" }}
+  {{- if not (in $tdates (.Date.Format "2006-01-02")) }}
+  {{- $items = $items | append (dict "date" .Date "title" .Title "where" (printf "%s, %s" .Params.event .Params.location) "chip" "Talk" "url" .RelPermalink) }}
+  {{- end }}
+{{- end }}
+<section class="section section--tight" aria-labelledby="h-teach" data-pagefind-ignore><div class="wrap">
+  <div class="shead"><h2 id="h-teach">Talks &amp; trainings</h2><div class="shead__links"><a href="{{ "events/" | relURL }}">All talks →</a><a href="{{ "trainings/" | relURL }}">All trainings →</a></div></div>
+  <ol class="hline">
+    {{- range first 5 (sort $items "date" "desc") }}
+    <li class="hl"><span class="mono">{{ .date.Format "Jan 2006" }}</span><b><a href="{{ .url }}">{{ .title }}</a></b><span>{{ .where }}</span><span class="chip">{{ .chip }}</span></li>
+    {{- end }}
+  </ol>
+</div></section>
+
+<section class="section section--tight" aria-labelledby="h-blog" data-pagefind-ignore><div class="wrap">
+  <div class="shead"><h2 id="h-blog">From the blog</h2><a href="{{ "blog/" | relURL }}">All posts →</a></div>
+  <div class="posts">{{ range first 3 (where site.RegularPages "Section" "blog").ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}</div>
+</div></section>
+
+{{- with .Params.callout }}
+{{- $me := site.GetPage "/authors/admin" }}
+<section class="wrap" aria-labelledby="h-cta"><div class="cta">
+  <div>
+    <p class="eyebrow">{{ .eyebrow }}</p>
+    <h2 id="h-cta">{{ .title }}</h2>
+    {{ $.RenderString (dict "display" "block") .text }}
+  </div>
+  <div class="cta__acts">
+    {{- with .button }}<a class="btn" href="{{ .url | relURL }}">{{ .text }}</a>{{ end }}
+    {{- range $me.Params.profiles }}{{ if hasPrefix .url "mailto:" }}<a class="btn ghost" href="{{ .url }}">{{ partial "icon.html" "mail" }} Get in touch</a>{{ end }}{{ end }}
+  </div>
+</div></section>
+{{- end }}
+{{ end }}

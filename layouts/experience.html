@@ -1,0 +1,33 @@
+{{- /* Experience / CV page, drawn from content/authors/admin/_index.md. */ -}}
+{{ define "masthead" }}
+{{- $me := site.GetPage "/authors/admin" }}
+{{- $btn := printf `<a class="btn" href="%s">%s Download CV (PDF)</a>` (site.Params.cv | relURL) (partial "icon.html" "doc") }}
+{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%s · %s" $me.Params.role site.Params.affiliation_short) "lede" "Positions, education, skills and languages." "actions" ($btn | safeHTML)) }}
+{{ end }}
+{{ define "main" }}
+{{- $me := site.GetPage "/authors/admin" }}
+<div class="page"><div class="wrap">
+  <section aria-labelledby="h-work">
+    <div class="shead"><h2 id="h-work">Positions</h2></div>
+    {{- range $me.Params.work }}
+    <article class="xp"><span class="mono">{{ (time.AsTime .date_start).Format "Jan 2006" }} – {{ with .date_end }}{{ (time.AsTime .).Format "Jan 2006" }}{{ else }}present{{ end }}</span>
+      <div><h3>{{ .position }}</h3><p class="org">{{ with .company_url }}<a href="{{ . }}">{{ end }}{{ .company_name }}{{ if .company_url }}</a>{{ end }}</p>{{ with .summary }}<p>{{ . | markdownify }}</p>{{ end }}</div></article>
+    {{- end }}
+  </section>
+  <section class="section" aria-labelledby="h-edu" style="padding-bottom:0">
+    <div class="shead"><h2 id="h-edu">Education</h2></div>
+    {{- range $me.Params.education }}
+    <article class="xp"><span class="mono">{{ (time.AsTime .date_start).Format "2006" }} – {{ with .date_end }}{{ (time.AsTime .).Format "2006" }}{{ else }}present{{ end }}</span>
+      <div><h3>{{ .area }}</h3><p class="org">{{ .institution }}</p>{{ with .summary }}<div class="prose" style="font-size:16.5px">{{ . | markdownify }}</div>{{ end }}</div></article>
+    {{- end }}
+  </section>
+  <section class="section" aria-labelledby="h-skills" style="padding-bottom:0">
+    <div class="shead"><h2 id="h-skills">Interests &amp; skills</h2></div>
+    <div class="skills">
+      {{- with $me.Params.interests }}<div><h3>Research interests</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+      {{- range $me.Params.skills }}<div><h3>{{ .name }}</h3><ul>{{ range .items }}<li>{{ .name }}</li>{{ end }}</ul></div>{{ end }}
+      {{- with $me.Params.languages }}<div><h3>Languages</h3><ul>{{ range . }}<li>{{ .name }}</li>{{ end }}</ul></div>{{ end }}
+    </div>
+  </section>
+</div></div>
+{{ end }}

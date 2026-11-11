@@ -1,0 +1,7 @@
+{{- /* Readable label for a social/profile link from content/authors/admin/_index.md. */ -}}
+{{- $l := "" -}}
+{{- $map := dict "brands/github" "GitHub" "brands/linkedin" "LinkedIn" "academicons/google-scholar" "Google Scholar" "academicons/orcid" "ORCID" "brands/x" "X" "brands/bluesky" "Bluesky" "academicons/researchgate" "ResearchGate" -}}
+{{- with index $map .icon }}{{ $l = . }}{{ end -}}
+{{- if hasPrefix .url "mailto:" }}{{ $l = "Email" }}{{ end -}}
+{{- if not $l }}{{ $l = .label | default .url }}{{ end -}}
+{{- return $l -}}

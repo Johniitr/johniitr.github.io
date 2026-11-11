@@ -1,0 +1,12 @@
+{{- /* Human date range: "3–8 May 2026", "8 Oct 2025", "28 Jan – 2 Feb 2026". Context: dict "start" "end" (time or string). */ -}}
+{{- $s := time.AsTime .start -}}
+{{- $out := $s.Format "2 Jan 2006" -}}
+{{- with .end -}}
+  {{- $e := time.AsTime . -}}
+  {{- if ne ($s.Format "20060102") ($e.Format "20060102") -}}
+    {{- if and (eq $s.Year $e.Year) (eq $s.Month $e.Month) -}}{{- $out = printf "%d–%s" $s.Day ($e.Format "2 Jan 2006") -}}
+    {{- else if eq $s.Year $e.Year -}}{{- $out = printf "%s – %s" ($s.Format "2 Jan") ($e.Format "2 Jan 2006") -}}
+    {{- else -}}{{- $out = printf "%s – %s" ($s.Format "2 Jan 2006") ($e.Format "2 Jan 2006") -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

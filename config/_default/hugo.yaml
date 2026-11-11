@@ -1,56 +1,46 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Site configuration. The design (layouts/, assets/) is custom and lives in this repository:
+# there is no external theme or Hugo module.
 
-# Website name
-title: "John Mohd Wani | Cryosphere Research"
-# Website URL
-baseURL: 'https://johniitr.github.io/'
-
-############################
-## LANGUAGE
-############################
-
+title: "John Mohd Wani"
+baseURL: "https://johniitr.github.io/"
+languageCode: en-us
 defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
 removePathAccents: true
 
-############################
-## ADVANCED
-############################
-
-build:
-  writeStats: true
+enableRobotsTXT: true
 enableGitInfo: false
 summaryLength: 30
-pagination:
-  # Items per list page (Publications, Blog, tags). Kept high so each list stays on one page.
-  pagerSize: 50
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-disableAliases: true
+
+# Items per list page (Publications, Blog, tags). Kept high so each list stays on one page.
+pagination:
+  pagerSize: 50
+
+taxonomies:
+  tag: tags
+  author: authors
+  publication_type: publication_types
+
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS]
   section: [HTML, RSS]
+  taxonomy: [HTML]
+  term: [HTML]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true          # posts contain a few raw <figure> blocks
+    parser:
+      attribute:
+        block: true
+  highlight:
+    codeFences: true        # code blocks go through layouts/_markup/render-codeblock.html (plain, styled by main.css)
+
 imaging:
   resampleFilter: lanczos
-  quality: 90
+  quality: 82
   anchor: smart
-  hint: picture
-timeout: 600000
-taxonomies:
-  author: authors
-  tag: tags
-  publication_type: publication_types
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-security:
-  _merge: deep
+
 sitemap:
-  _merge: deep
+  changeFreq: monthly

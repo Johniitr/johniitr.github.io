@@ -20,7 +20,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Theoretical and Applied Climatology*"
-publication_short: "Theor. Appl. Climatol"
+publication_short: "Theor. Appl. Climatol."
 
 # Tags help filter publications
 tags:

@@ -19,7 +19,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Geotechnical and Geological Engineering*"
-publication_short: "Geotech. Geol. Eng"
+publication_short: "Geotech. Geol. Eng."
 
 summary: "A single thermodynamic starting point for capillarity, solutes and adsorption in freezing ground."
 

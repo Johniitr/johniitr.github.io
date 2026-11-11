@@ -23,7 +23,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Natural Hazards*"
-publication_short: "Nat Hazards"
+publication_short: "Nat. Hazards"
 
 # Tags help filter publications
 tags:

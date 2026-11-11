@@ -20,7 +20,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Journal of Earth System Science*"
-publication_short: "J. Earth Syst. Sci"
+publication_short: "J. Earth Syst. Sci."
 
 # Tags help filter publications
 tags:

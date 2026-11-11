@@ -1,0 +1,12 @@
+{{- /* Theme filter buttons for a list of publications. Context: dict "target" (id of the list) "pages". */ -}}
+{{- $pages := .pages -}}
+<div class="filters" role="group" aria-label="Filter by research theme" data-filters="{{ .target }}">
+  <button type="button" data-f="all" aria-pressed="true">All<span class="n">{{ len $pages }}</span></button>
+  {{- with site.GetPage "/research" }}{{ range .Params.themes }}
+  {{- $t := . }}{{ $n := 0 }}
+  {{- range $pages }}{{ if in (partial "functions/pub-themes.html" .) $t.id }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+  {{- if gt $n 0 }}
+  <button type="button" data-f="{{ $t.id }}" aria-pressed="false">{{ $t.short | default $t.title }}<span class="n">{{ $n }}</span></button>
+  {{- end }}
+  {{- end }}{{ end }}
+</div>

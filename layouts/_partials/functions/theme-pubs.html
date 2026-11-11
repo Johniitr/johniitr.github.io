@@ -1,0 +1,7 @@
+{{- /* Publications belonging to one research theme (context: the theme map), newest first. */ -}}
+{{- $tags := .tags | default slice -}}
+{{- $out := slice -}}
+{{- range (where site.RegularPages "Section" "publications").ByDate.Reverse -}}
+  {{- if gt (len (intersect $tags (.Params.tags | default slice))) 0 }}{{ $out = $out | append . }}{{ end -}}
+{{- end -}}
+{{- return $out -}}

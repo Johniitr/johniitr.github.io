@@ -1,0 +1,33 @@
+{{- /* Blog post: dark header, large image overlapping it, then the text column. */ -}}
+{{ define "masthead" }}
+{{- $hasImg := .Resources.GetMatch "featured.*" }}
+{{ partial "masthead.html" (dict "page" . "class" (cond (ne $hasImg nil) "masthead--post" "") "eyebrow" (printf "%s · %d min read" (.Date.Format site.Params.date_format) .ReadingTime) "lede" (.Params.subtitle | default .Params.summary | default "")) }}
+{{ end }}
+{{ define "main" }}
+{{- $me := site.GetPage "/authors/admin" }}
+<div class="wrap">
+  {{- with .Resources.GetMatch "featured.*" }}
+  {{- $big := .Resize (printf "%dx webp q80" (cond (gt .Width 2000) 2000 .Width)) }}
+  {{- $small := .Resize (printf "%dx webp q78" (cond (gt .Width 800) 800 .Width)) }}
+  <figure class="post-hero"><img src="{{ $big.RelPermalink }}" srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $big.RelPermalink }} {{ $big.Width }}w" sizes="(max-width: 1000px) 100vw, 1000px" width="{{ $big.Width }}" height="{{ $big.Height }}" alt="{{ $.Params.image.alt | default "" }}" fetchpriority="high">{{ with $.Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>
+  {{- end }}
+  <article class="prose post-body">{{ partial "functions/optimise-raw-images.html" . }}</article>
+  <footer class="post-foot" data-pagefind-ignore>
+    {{- with .GetTerms "tags" }}<div class="tags">{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>{{ end }}
+    <div class="author-box">
+      {{- with $me.Resources.Get "portrait.jpg" }}{{ $i := .Fill "144x144 Center webp q80" }}<img src="{{ $i.RelPermalink }}" width="72" height="72" alt="">{{ end }}
+      <div><b>{{ $me.Title }}</b><p>{{ $me.Params.role }}, {{ site.Params.affiliation_short }}. <a href="{{ "research/" | relURL }}">About my research</a> · <a href="{{ "publications/" | relURL }}">Publications</a></p></div>
+    </div>
+    {{- $posts := (where site.RegularPages "Section" "blog").ByDate }}
+    {{- $older := false }}{{ $newer := false }}
+    {{- range $i, $p := $posts }}{{ if eq $p.RelPermalink $.RelPermalink }}
+      {{- if gt $i 0 }}{{ $older = index $posts (sub $i 1) }}{{ end }}
+      {{- if lt (add $i 1) (len $posts) }}{{ $newer = index $posts (add $i 1) }}{{ end }}
+    {{- end }}{{ end }}
+    <nav class="prevnext" aria-label="More posts">
+      {{- with $older }}<a href="{{ .RelPermalink }}"><span>← Older post</span><b>{{ .Title }}</b></a>{{ else }}<span></span>{{ end }}
+      {{- with $newer }}<a class="next" href="{{ .RelPermalink }}"><span>Newer post →</span><b>{{ .Title }}</b></a>{{ end }}
+    </nav>
+  </footer>
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+{{- /* Blog post card. Photos are cropped to fill; figures (PNG) are shown whole on a white plate. */ -}}
+<article class="post-card">
+  {{- with .Resources.GetMatch "featured.*" }}
+  {{- if eq .MediaType.Type "image/png" }}
+  {{- $i := .Fit "720x405 webp q80" }}
+  <div class="plate"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async"></div>
+  {{- else }}
+  {{- $i := .Fill "720x405 smart webp q78" }}
+  <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async">
+  {{- end }}
+  {{- end }}
+  <span class="mono">{{ .Date.Format site.Params.date_format }}</span>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ .Params.summary | default .Summary | markdownify | plainify | truncate 170 }}</p>
+</article>

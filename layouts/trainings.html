@@ -1,0 +1,23 @@
+{{- /* Workshops & training: entries listed in content/trainings/index.md, newest first, grouped by year. */ -}}
+{{ define "masthead" }}{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%d workshops & courses" (len .Params.entries)) "lede" (.Params.summary | default "")) }}{{ end }}
+{{ define "main" }}
+{{- $entries := slice }}
+{{- range .Params.entries }}{{ $entries = $entries | append (merge . (dict "start" (time.AsTime .date))) }}{{ end }}
+{{- $entries = sort $entries "start" "desc" }}
+{{- $upcoming := where $entries "start" "ge" now }}
+{{- $past := where $entries "start" "lt" now }}
+<div class="page"><div class="wrap">
+  {{ with .Content }}<div class="prose" style="margin-bottom:46px">{{ . }}</div>{{ end }}
+  <h2 class="year-head">Upcoming</h2>
+  {{- if $upcoming }}
+  <ol class="vline">{{ range $upcoming }}{{ partial "training-item.html" . }}{{ end }}</ol>
+  {{- else }}
+  <p class="note">{{ .Params.upcoming_note }}</p>
+  {{- end }}
+  {{- $years := slice }}{{ range $past }}{{ $years = $years | append (.start.Format "2006") }}{{ end }}
+  {{- range uniq $years }}{{ $y := . }}
+  <h2 class="year-head" style="margin-top:52px">{{ $y }}</h2>
+  <ol class="vline">{{ range $past }}{{ if eq (.start.Format "2006") $y }}{{ partial "training-item.html" . }}{{ end }}{{ end }}</ol>
+  {{- end }}
+</div></div>
+{{ end }}

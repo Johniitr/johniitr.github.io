@@ -1,0 +1,2 @@
+{{- /* Code blocks: focusable so keyboard users can scroll long lines (WCAG "scrollable region focusable"). */ -}}
+<pre tabindex="0"{{ with .Type }} data-lang="{{ . }}"{{ end }}><code>{{ .Inner }}</code></pre>

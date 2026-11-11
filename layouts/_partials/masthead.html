@@ -1,0 +1,17 @@
+{{- /* Standard page header: dark contour band with the navigation, an eyebrow line, the title and a lede.
+       Context: dict "page" "eyebrow" "title" "authors" (HTML) "lede" (markdown) "meta" (HTML) "actions" (HTML) "class". */ -}}
+{{- $p := .page -}}
+<header class="masthead on-dark{{ with .class }} {{ . }}{{ end }}">
+  <div class="masthead__art" aria-hidden="true"></div>
+  <div class="wrap">
+    {{ partial "nav.html" $p }}
+    <div class="masthead__body">
+      {{- with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h1 class="masthead__title">{{ .title | default $p.Title }}</h1>
+      {{- with .authors }}<p class="masthead__authors">{{ . }}</p>{{ end }}
+      {{- with .lede }}<p class="masthead__lede">{{ . | $p.RenderString }}</p>{{ end }}
+      {{- with .meta }}<div class="masthead__meta">{{ . }}</div>{{ end }}
+      {{- with .actions }}<div class="masthead__actions">{{ . }}</div>{{ end }}
+    </div>
+  </div>
+</header>

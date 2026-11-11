@@ -25,7 +25,7 @@ hugoblox:
 publication_types: ["article"]
 
 publication: '*EGUsphere* [preprint]'
-publication_short: 'EGUsphere'
+publication_short: "EGUsphere"
 
 
 # Tags help filter publications

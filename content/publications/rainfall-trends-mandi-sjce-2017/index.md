@@ -19,7 +19,7 @@ hugoblox:
 publication_types: ["article-journal"]
 
 publication: "*Slovak Journal of Civil Engineering*"
-publication_short: "Slovak J. Civ. Eng"
+publication_short: "Slovak J. Civ. Eng."
 
 # Tags help filter publications
 tags:

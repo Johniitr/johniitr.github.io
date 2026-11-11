@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Cryosphere Researcher
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -137,4 +137,4 @@ languages:
 
 ---
 
-John Mohd Wani is an early career researcher focused on cryosphere, particularly snow and permafrost processes. This website hosts my work, blog, and updates. I apply and develop physically-based models **[GEOtop](https://github.com/geotopmodel/geotop)**, **[GEOframe](https://github.com/geoframecomponents)** to bridge the gap between field observations and theoretical understanding, aiming to reduce uncertainty in water resource predictions for high-altitude regions.
+I am a cryosphere scientist at C3A, University of Trento. I study how mountain snow and permafrost respond to a warming climate, and what that means for water resources and natural hazards in high-altitude regions. I combine field observations with physically based models, [GEOtop](https://github.com/geotopmodel/geotop) and [GEOframe](https://github.com/geoframecomponents), from the cold-arid Ladakh Himalaya, where I did my PhD on permafrost, to the Alps.

@@ -1,0 +1,26 @@
+{{- /* Research page: content/research/index.md (themes with text, images, and papers/posts matched by tag). */ -}}
+{{ define "main" }}
+<div class="page"><div class="wrap">
+  <div class="prose research-intro">{{ .Content }}</div>
+  {{- range $i, $t := .Params.themes }}
+  <section class="theme-block" id="{{ $t.id }}" aria-labelledby="t-{{ $t.id }}">
+    <div>
+      <span class="row__n" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+      <h2 id="t-{{ $t.id }}">{{ $t.title }}</h2>
+      <div class="prose">{{ $.RenderString (dict "display" "block") $t.body }}</div>
+      <div class="refs" data-pagefind-ignore>
+        {{- with partial "functions/theme-pubs.html" $t }}
+        <h3>Publications</h3>
+        <ul class="related">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mono">{{ .Date.Year }} · {{ partial "functions/pub-short.html" . }}</span></li>{{ end }}</ul>
+        {{- end }}
+        {{- with partial "functions/theme-posts.html" $t }}
+        <h3>On the blog</h3>
+        <ul class="related">{{ range first 4 . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mono">{{ .Date.Format "Jan 2006" }}</span></li>{{ end }}</ul>
+        {{- end }}
+      </div>
+    </div>
+    <figure class="theme-media">{{ partial "theme-image.html" (dict "page" $ "theme" $t "w" 900) }}{{ with $t.image_credit }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
+  </section>
+  {{- end }}
+</div></div>
+{{ end }}

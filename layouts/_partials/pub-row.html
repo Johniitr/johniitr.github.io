@@ -1,0 +1,13 @@
+{{- /* Publication entry for the full list. Context: the publication page. */ -}}
+<article class="pub" data-k="{{ delimit (partial "functions/pub-themes.html" .) " " }}">
+  <div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="authors">{{ partial "authors.html" (dict "page" . "max" 0) }}</p>
+    <p class="venue">{{ partial "functions/venue.html" . }}</p>
+    {{ partial "pub-actions.html" (dict "page" .) }}
+  </div>
+  {{- with .Resources.GetMatch "featured.*" }}
+  {{- $i := .Fit "300x192 webp q78" }}
+  <a class="plate" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async"></a>
+  {{- end }}
+</article>

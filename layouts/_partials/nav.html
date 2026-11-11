@@ -1,0 +1,17 @@
+{{- /* Top navigation (sits on the dark contour header). Menu items: config/_default/menus.yaml. */ -}}
+{{- $cur := . -}}
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="{{ "" | relURL }}">{{ partial "mark.html" . }}<span>{{ site.Title }}</span></a>
+  <ul class="nav__links" id="nav-links">
+    {{- range site.Menus.main }}
+    {{- $url := .URL | relURL }}
+    {{- $active := or ($cur.IsMenuCurrent "main" .) (eq $cur.RelPermalink $url) (and $cur.Section (eq (strings.TrimSuffix "/" $url) (printf "/%s" $cur.Section))) }}
+    <li><a href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+    {{- end }}
+  </ul>
+  <div class="nav__tools">
+    <button class="ib" type="button" data-search aria-label="Search the site (Ctrl+K)" title="Search (Ctrl+K)">{{ partial "icon.html" "search" }}</button>
+    <button class="ib" type="button" data-theme-toggle aria-label="Switch between dark and light mode" title="Dark / light">{{ partial "icon.html" "moon" }}{{ partial "icon.html" "sun" }}</button>
+    <button class="ib menu" type="button" data-menu aria-controls="nav-links" aria-expanded="false" aria-label="Open the menu">{{ partial "icon.html" "menu" }}</button>
+  </div>
+</nav>

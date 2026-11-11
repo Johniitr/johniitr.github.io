@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang | default "en" }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+{{ block "masthead" . }}{{ partial "masthead.html" (dict "page" . "eyebrow" (.Params.eyebrow | default "") "lede" (.Params.summary | default "")) }}{{ end }}
+{{- /* Search indexes only pages with data-pagefind-body. List, tag and 404 templates override this block with data-pagefind-ignore="all" (an empty override would be ignored by Go templates). */}}
+<main id="main"{{ block "pagefind" . }} data-pagefind-body{{ end }}>
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ partial "dialogs.html" . }}
+{{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

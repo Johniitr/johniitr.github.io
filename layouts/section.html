@@ -1,0 +1,11 @@
+{{- /* Fallback for section lists. */ -}}
+{{ define "main" }}
+<div class="page"><div class="wrap">
+  {{ with .Content }}<div class="prose" style="margin-bottom:40px">{{ . }}</div>{{ end }}
+  <ul class="list-items">
+    {{- range .Pages.ByDate.Reverse }}
+    <li class="item item--text"><span class="mono">{{ .Date.Format "Jan 2006" }}</span><div><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>{{ with .Params.summary }}<p>{{ . | markdownify | plainify }}</p>{{ end }}</div></li>
+    {{- end }}
+  </ul>
+</div></div>
+{{ end }}

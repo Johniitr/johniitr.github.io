@@ -1,0 +1,16 @@
+{{ define "masthead" }}{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%d talks & courses" (len .RegularPages)) "lede" (.Params.summary | default "")) }}{{ end }}
+{{ define "pagefind" }} data-pagefind-ignore="all"{{ end }}
+{{ define "main" }}
+<div class="page"><div class="wrap"><ul class="list-items">
+  {{- range .RegularPages.ByDate.Reverse }}
+  <li class="item">
+    <div class="item__media">{{ with .Resources.GetMatch "featured.*" }}{{ $i := .Fill "420x315 smart webp q78" }}<img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy">{{ end }}</div>
+    <div>
+      <span class="mono">{{ partial "functions/date-range.html" (dict "start" .Date "end" .Params.date_end) }} · {{ .Params.location }}</span>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Params.event }}{{ with .Params.summary }}. {{ . | markdownify | plainify }}{{ end }}</p>
+    </div>
+  </li>
+  {{- end }}
+</ul></div></div>
+{{ end }}

@@ -1,0 +1,5 @@
+{{ define "masthead" }}{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%d posts" (len .RegularPages)) "lede" (.Params.summary | default "")) }}{{ end }}
+{{ define "pagefind" }} data-pagefind-ignore="all"{{ end }}
+{{ define "main" }}
+<div class="page"><div class="wrap"><div class="posts">{{ range .RegularPages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}</div></div></div>
+{{ end }}

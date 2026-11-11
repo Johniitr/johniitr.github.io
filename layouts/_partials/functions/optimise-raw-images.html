@@ -1,0 +1,11 @@
+{{- /* A post's .Content, with images written as raw HTML (<img src="file.jpg">) swapped for resized WebP
+       versions, so old posts stay fast without editing them. Markdown images are handled by render-image. */ -}}
+{{- $c := string .Content -}}
+{{- range .Resources.ByType "image" -}}
+  {{- $needle := printf `src="%s"` .Name -}}
+  {{- if and (strings.Contains $c $needle) (in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type) -}}
+    {{- $r := .Resize (printf "%dx webp q82" (cond (gt .Width 1440) 1440 .Width)) -}}
+    {{- $c = replace $c $needle (printf `src="%s" width="%d" height="%d" loading="lazy" decoding="async"` $r.RelPermalink $r.Width $r.Height) -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($c | safeHTML) -}}

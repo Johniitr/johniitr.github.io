@@ -1,0 +1,12 @@
+{{ define "masthead" }}{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%s · %d" (.Parent.Title | default "Topic") (len .Pages)) "lede" "") }}{{ end }}
+{{ define "pagefind" }} data-pagefind-ignore="all"{{ end }}
+{{ define "main" }}
+<div class="page"><div class="wrap"><ul class="list-items">
+  {{- range .Pages.ByDate.Reverse }}
+  {{- $kind := "Post" }}{{ if eq .Section "publications" }}{{ $kind = "Paper" }}{{ else if eq .Section "events" }}{{ $kind = "Talk" }}{{ end }}
+  <li class="item item--text"><span class="mono">{{ $kind }} · {{ .Date.Format "Jan 2006" }}</span>
+    <div><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{- if eq .Section "publications" }}<p>{{ partial "functions/venue.html" . }}</p>{{ else }}{{ with .Params.summary }}<p>{{ . | markdownify | plainify | truncate 180 }}</p>{{ end }}{{ end }}</div></li>
+  {{- end }}
+</ul></div></div>
+{{ end }}

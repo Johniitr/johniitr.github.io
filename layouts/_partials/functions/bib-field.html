@@ -1,0 +1,7 @@
+{{- /* Returns one field (e.g. "volume", "pages", "number") from the page bundle's cite.bib, or "". */ -}}
+{{- $v := "" -}}
+{{- with .page.Resources.Get "cite.bib" -}}
+  {{- $m := findRESubmatch (printf `(?im)^\s*%s\s*=\s*[{"]?\s*([^,}"\n]+)` $.field) .Content 1 -}}
+  {{- with $m }}{{ $v = index (index . 0) 1 | strings.TrimSpace }}{{ end -}}
+{{- end -}}
+{{- return $v -}}

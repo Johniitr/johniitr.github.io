@@ -1,0 +1,30 @@
+{{- /* One talk or course. */ -}}
+{{ define "masthead" }}
+{{- $when := partial "functions/date-range.html" (dict "start" .Date "end" .Params.date_end) }}
+{{- $meta := printf `<span>%s</span><span>%s</span>` $when .Params.location }}
+{{- with .Params.event_url }}{{ $meta = printf `%s<span><a href="%s">%s</a></span>` $meta . $.Params.event }}{{ else }}{{ $meta = printf `%s<span>%s</span>` $meta .Params.event }}{{ end }}
+{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "Talk · %s" .Params.event) "lede" (.Params.summary | default "") "meta" ($meta | safeHTML)) }}
+{{ end }}
+{{ define "main" }}
+<div class="page"><div class="wrap layout-2">
+  <article>
+    {{- with .Resources.GetMatch "featured.*" }}
+    {{- $i := .Resize (printf "%dx webp q80" (cond (gt .Width 1400) 1400 .Width)) }}
+    <figure class="paper-fig"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" style="border-radius:14px">{{ with $.Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>
+    {{- end }}
+    <div class="prose">
+      {{- with .Params.abstract }}<h2 style="margin-top:0">Abstract</h2><p>{{ . | markdownify }}</p>{{ end }}
+      {{ .Content }}
+    </div>
+  </article>
+  <aside class="aside" data-pagefind-ignore>
+    <div><h2>Details</h2><ul class="facts">
+      <li><span>Event</span><b>{{ with .Params.event_url }}<a href="{{ . }}">{{ $.Params.event }}</a>{{ else }}{{ .Params.event }}{{ end }}</b></li>
+      <li><span>Dates</span><b>{{ partial "functions/date-range.html" (dict "start" .Date "end" .Params.date_end) }}</b></li>
+      <li><span>Location</span><b>{{ .Params.location }}</b></li>
+    </ul></div>
+    {{- with .GetTerms "tags" }}<div><h2>Topics</h2><div class="tags">{{ range . }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div></div>{{ end }}
+    <div><a class="btn ghost" href="{{ "events/" | relURL }}">All talks</a></div>
+  </aside>
+</div></div>
+{{ end }}
