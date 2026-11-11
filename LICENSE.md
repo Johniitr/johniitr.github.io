@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2026 John Mohd Wani
+Copyright (c) 2023-present George Cushen (https://georgecushen.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +26,11 @@ SOFTWARE.
 ## What this licence covers
 
 - **Covered by the MIT licence above:** the website's design and code, i.e. the templates in `layouts/`,
-  the styles and scripts in `assets/`, the configuration in `config/`, and `tools/`.
+  the styles and scripts in `assets/`, the configuration in `config/`, the publishing workflow in
+  `.github/`, and `tools/`.
+- **Origin:** this site began as the Hugo Blox "Academic CV" template by George Cushen (MIT licence). The
+  2026 redesign replaced its templates and styles; the deploy workflow and parts of the configuration still
+  come from it.
 - **Not covered: the site's content.** My own text, photographs and drawings in `content/` and `static/`
   are © John Mohd Wani, all rights reserved, unless noted otherwise.
 - **Published papers:** abstracts and figures shown on the publication pages remain under the copyright or
