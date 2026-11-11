@@ -77,22 +77,14 @@ education:
       GPA: 8.4/10
 
 work:
-  - position: Assistant Professor (Non-Tenure)
-    company_name: C3A, University of Trento
-    company_url: 'https://www.centro3a.unitn.it/en'
-    icon: ''
-    date_start: 2025-10-01
-    date_end: ''
-    summary: |
-      To develop an advanced modeling framework for cryo‑hydrological modeling by integrating new process‑based components in the GEOframe modelling system.
   - position: Postdoctoral Researcher
     company_name: C3A, University of Trento
     company_url: 'https://www.centro3a.unitn.it/en'
     icon: ''
     date_start: 2023-06-01
-    date_end: 2025-09-30
+    date_end: ''
     summary: |
-      Worked on quantifying and predicting the response of the snow dynamics to climate change using modelling and data analysis.
+      Quantifying and predicting the response of snow dynamics to climate change using modelling and data analysis, and developing an advanced framework for cryo-hydrological modelling by integrating new process-based components into the GEOframe modelling system.
 
 # Skills
 skills:

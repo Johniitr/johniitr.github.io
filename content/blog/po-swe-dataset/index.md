@@ -15,7 +15,7 @@ tags:
 # THE IMAGE SETUP
 image:
   placement: 1             # 1 = Top of post (Header)
-  caption: 'Photo credit: John Wani'
+  caption: 'The Po River. Photo credit: Gaia'
   focal_point: "Smart"
   preview_only: false      # Show on homepage? True/False
   filename: featured.jpg   #
@@ -84,12 +84,3 @@ This dataset is open-access and ready for use in climate impact studies like sno
 > We performed a comprehensive analysis using this exact dataset. Read the key findings in our recent blog post:
 >
 > 👉 **[The Alps are Losing Snow]({{< ref "blog/alps-are-losing-snow" >}})**
-
-
-<figure class="align-full">
-  <img src="po_river.jpg" alt="Po River" style="width: 100%;">
-  
-  <figcaption style="text-align: center; font-size: 0.9em; color: #666; margin-top: 5px;">
-    Photo credit: <strong>Gaia</strong>
-  </figcaption>
-</figure>
