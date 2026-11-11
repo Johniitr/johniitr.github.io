@@ -8,9 +8,9 @@
     <p class="eyebrow">My research</p>
     <p class="intro__lead" id="h-myresearch">{{ .lead | markdownify }}</p>
     <ol class="pillars">
-      {{- range $i, $pt := .points }}
+      {{- range $pt := .points }}
       <li class="pillar">
-        <span class="pillar__top"><span class="pillar__icon">{{ partial "icon.html" (printf "pillar-%s" ($pt.icon | default "mountain")) }}</span><span class="pillar__n">{{ printf "%02d" (add $i 1) }}</span></span>
+        <span class="pillar__top"><span class="pillar__icon">{{ partial "icon.html" (printf "pillar-%s" ($pt.icon | default "mountain")) }}</span></span>
         <h3>{{ $pt.label }}</h3>
         <p>{{ $pt.text | markdownify }}</p>
       </li>

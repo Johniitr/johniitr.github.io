@@ -3,6 +3,7 @@
 {{ partial "research-intro.html" . }}
 <div class="page"><div class="wrap">
   {{ with .Content }}<div class="prose research-intro">{{ . }}</div>{{ end }}
+  <div class="shead"><h2>Research themes</h2><span class="muted" style="font-size:15px">Each theme lists its papers and blog posts.</span></div>
   {{- range $i, $t := .Params.themes }}
   <section class="theme-block" id="{{ $t.id }}" aria-labelledby="t-{{ $t.id }}">
     <div>

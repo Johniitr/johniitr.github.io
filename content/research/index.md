@@ -25,12 +25,12 @@ intro:
 # "key_papers": folder names in content/publications/, shown as links under the theme on the homepage.
 themes:
   - id: permafrost
-    title: "Permafrost in the Himalaya"
+    title: "Permafrost and frozen ground"
     short: "Permafrost"
     image: ladakh-valley.jpg
     image_alt: "A glacial valley in the Ladakh Range, Indian Himalaya"
     image_credit: "Ladakh Range, Indian Himalaya · photo J. M. Wani"
-    summary: "Field evidence and modelling of permafrost in the cold-arid Ladakh Range: the energy balance that sustains it, how deep it thaws each summer, and its role in mountain hazards such as the 2021 Chamoli disaster."
+    summary: "Field evidence and modelling of permafrost, from the cold-arid Ladakh Range to Svalbard: the energy balance that sustains it, how deep it thaws each summer, and its role in mountain hazards such as the 2021 Chamoli disaster."
     tags: [Permafrost, Active layer thickness, Debris flow, Hanging glacier]
     key_papers: [permafrost-TC, permafrost-stoten, chamoli-2021]
     body: |
@@ -61,7 +61,7 @@ themes:
     image_alt: "GEOtop simulations of snow depth across the Non Valley, Trentino, in January and May"
     image_credit: "GEOtop snow depth, Non Valley (Trentino), January vs May"
     summary: "Developing and applying GEOtop and GEOframe, from a thermodynamic framework for freezing soil to automated calibration of coupled heat-and-water permafrost models."
-    tags: [GEOtop, GEOframe, Calibration, Thermodynamics, Freezing Soil, Soil Physics]
+    tags: [GEOframe, Calibration, Thermodynamics, Freezing Soil, Soil Physics, Short Course, Workshop, Teaching]
     key_papers: [freezing-soil-gge-2026, abhischek_CRE]
     body: |
       I use and help develop open-source, physically based models: [GEOtop](https://github.com/geotopmodel/geotop), which couples the energy and water budgets at and below the land surface, and the component-based [GEOframe](https://github.com/geoframecomponents) system, into which I am integrating new process-based cryo-hydrological components.
