@@ -4,7 +4,7 @@
 title: "John Mohd Wani"
 
 # The headline under your name. *Asterisks* make words italic (shown in the accent colour).
-statement: "I study how mountain *snow and permafrost* respond to a warming climate, and what that means for water and hazards downstream."
+statement: "I quantify and predict how *snow and permafrost* respond to climate change, and what that means for water resources and natural hazards."
 
 # Places shown along the bottom of the header (coordinates are optional).
 sites:

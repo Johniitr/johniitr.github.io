@@ -41,8 +41,10 @@
 </div></section>
 
 {{- $research := site.GetPage "/research" }}
+{{ partial "research-intro.html" $research }}
+
 <section class="section" aria-labelledby="h-research"><div class="wrap">
-  <div class="shead"><h2 id="h-research">Research</h2><a href="{{ $research.RelPermalink }}">About my research →</a></div>
+  <div class="shead"><h2 id="h-research">Research themes</h2><a href="{{ $research.RelPermalink }}">About my research →</a></div>
   <div class="rows">
     {{- range $i, $t := $research.Params.themes }}
     <article class="row">

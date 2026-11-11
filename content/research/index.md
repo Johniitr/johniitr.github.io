@@ -1,7 +1,22 @@
 ---
 title: "Research"
-summary: "I study how mountain snow and permafrost respond to a warming climate, combining field observations with physically based models."
+summary: "Quantifying and predicting the response of the cryosphere, permafrost and snow, to climate change, and its impact on water resources and natural hazards."
 layout: research
+
+# "My research" block, shown on the homepage and at the top of this page.
+# *Asterisks* make words italic (shown in the accent colour). icon: mountain, model or drop.
+intro:
+  lead: "I am an early-career researcher focused on the *cryosphere*, particularly snow and permafrost processes."
+  points:
+    - label: "The challenge"
+      icon: mountain
+      text: "Quantifying and predicting the response of the cryosphere (permafrost and snow) to climate change, and its impact on water resources and natural hazards."
+    - label: "The approach"
+      icon: model
+      text: "Applying and developing physically based models, [GEOtop](https://github.com/geotopmodel/geotop) and [GEOframe](https://github.com/geoframecomponents), to bridge the gap between field observations and theoretical understanding."
+    - label: "The aim"
+      icon: drop
+      text: "Reducing uncertainty in water-resource predictions for high-altitude regions."
 
 # Research themes. They appear on the homepage and on this page, in this order.
 # "tags": a publication or blog post belongs to a theme when it carries one of these tags
@@ -53,5 +68,3 @@ themes:
 
       Recent work derives the freezing of soil water from a single thermodynamic starting point, treating capillarity, dissolved solutes and adsorption as terms of one chemical potential. It also automates the calibration of 101 parameters of coupled heat-and-water permafrost models at boreholes near Hornsund, Svalbard. I teach these models in hands-on courses, from EGU in Vienna to ICIMOD in Kathmandu.
 ---
-
-My research addresses one question: how the mountain cryosphere, snow and permafrost, responds to climate change, and what that means for water resources and natural hazards in high-altitude regions. I work across scales, from loggers buried in Himalayan scree to basin-wide snow reanalyses, and I use physically based models to connect field observations with theory.

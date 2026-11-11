@@ -1,7 +1,8 @@
 {{- /* Research page: content/research/index.md (themes with text, images, and papers/posts matched by tag). */ -}}
 {{ define "main" }}
+{{ partial "research-intro.html" . }}
 <div class="page"><div class="wrap">
-  <div class="prose research-intro">{{ .Content }}</div>
+  {{ with .Content }}<div class="prose research-intro">{{ . }}</div>{{ end }}
   {{- range $i, $t := .Params.themes }}
   <section class="theme-block" id="{{ $t.id }}" aria-labelledby="t-{{ $t.id }}">
     <div>
