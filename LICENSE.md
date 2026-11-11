@@ -26,7 +26,11 @@ SOFTWARE.
 
 - **Covered by the MIT licence above:** the website's design and code, i.e. the templates in `layouts/`,
   the styles and scripts in `assets/`, the configuration in `config/`, and `tools/`.
-- **Not covered:** the site's content (text, publications, figures and photographs in `content/` and
-  `static/`) is © John Mohd Wani unless noted otherwise; third-party images are credited where they appear.
+- **Not covered: the site's content.** My own text, photographs and drawings in `content/` and `static/`
+  are © John Mohd Wani, all rights reserved, unless noted otherwise.
+- **Published papers:** abstracts and figures shown on the publication pages remain under the copyright or
+  licence of the journal that published them (several of the papers are open access under CC BY).
+- **Third-party images** are credited where they appear and belong to their authors.
 - **Fonts** in `static/fonts/` are licensed under the SIL Open Font License (licence files in that folder).
-- **Contour artwork** is derived from NASA SRTM elevation data, distributed via AWS Terrain Tiles.
+- **Contour artwork** is derived from SRTM elevation data (NASA/USGS, public domain), accessed through
+  AWS Terrain Tiles (https://registry.opendata.aws/terrain-tiles/).
