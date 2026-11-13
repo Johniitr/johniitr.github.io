@@ -9,7 +9,19 @@ upcoming_note: "New workshops and courses will be announced here. Stay tuned!"
 
 # One entry per workshop or course, any order (the page sorts them, newest first).
 # date / date_end: YYYY-MM-DD (date_end is optional). Links are optional.
+# when: optional text shown instead of the dates while they are not fixed yet (e.g. "Mid-February 2027");
+#       `date` is still needed, to sort the entries and to decide what is upcoming.
 entries:
+  - title: "Snow–Permafrost Interactions Winter School"
+    date: "2027-02-15" # placeholder until the exact dates are fixed (the page shows `when` instead)
+    when: "Mid-February 2027"
+    location: "University of Trento, Italy, co-hosted by Eurac Research, Bolzano"
+    role: "Organizer"
+    details: "*Processes, Measurements, and 1D Thermo-Hydrologic Modelling.* A one-week school for early-career scientists: four teaching days and an optional field day in the Alps. Supported by the European Geosciences Union (EGU)."
+    links:
+      - name: "Read the announcement"
+        url: "/blog/snow-permafrost-winter-school-2027/"
+
   - title: "Energy Balance Modelling of Permafrost Environments in the HKH"
     date: "2026-07-27"
     date_end: "2026-07-29"

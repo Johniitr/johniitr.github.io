@@ -292,6 +292,17 @@ a.tag:hover,button.tag:hover{border-color:var(--accent);color:var(--accent)}
 .prose figcaption,.prose .caption{font-size:14.5px;line-height:1.55;color:var(--muted);margin-top:10px}
 .prose figcaption{color:var(--muted)!important}  /* overrides colours typed inside old posts, which fail in dark mode */
 .prose figcaption span{font-size:12.5px!important;color:var(--muted)!important}
+/* Logos that come in a light-background and a dark-background version (e.g. the EGU logo in the winter-school
+   post): only the version that suits the current colour theme is shown. Not to be confused with `.on-dark`,
+   which marks the dark page header. */
+.dark-only{display:none!important}
+:root[data-theme="dark"] .light-only{display:none!important}
+:root[data-theme="dark"] .dark-only{display:block!important}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .light-only{display:none!important}
+  :root:not([data-theme="light"]) .dark-only{display:block!important}}
+.prose .sponsor a{display:inline-block}
+.prose .sponsor img{display:block;width:240px;max-width:100%;height:auto;border-radius:0;margin:0}
 .prose .align-center{text-align:left}
 .prose .align-full img{width:100%}
 .prose table{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5}
