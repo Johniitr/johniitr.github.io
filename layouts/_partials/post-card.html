@@ -5,7 +5,7 @@
   {{- $i := .Fit "720x405 webp q80" }}
   <div class="plate"><img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async"></div>
   {{- else }}
-  {{- $i := .Fill "720x405 smart webp q78" }}
+  {{- $i := .Fill (printf "720x405 %s webp q78" (partial "functions/crop-anchor.html" $)) }}
   <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy" decoding="async">
   {{- end }}
   {{- end }}

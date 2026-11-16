@@ -6,7 +6,7 @@
 {{- if or (eq $p.Section "blog") (eq $p.Section "events") -}}
   {{- with $p.Resources.GetMatch "featured.*" -}}
     {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type -}}
-      {{- $i := .Fill "1200x630 smart jpg q80" }}{{ $img = $i.Permalink }}
+      {{- $i := .Fill (printf "1200x630 %s jpg q80" (partial "functions/crop-anchor.html" $p)) }}{{ $img = $i.Permalink }}
     {{- end -}}
   {{- end -}}
 {{- end -}}

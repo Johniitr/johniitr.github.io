@@ -1,0 +1,8 @@
+{{- /* Where to crop a page's featured image when it must fill a fixed shape (blog cards, link previews).
+       Returns the page's `image.focal_point` (Smart, Center, Top, Left, Right, TopLeft, … as in the old theme),
+       else "smart". Smart cropping may also zoom in, so a designed banner with text near its edges should set
+       `focal_point: "Center"`. Usage: partial "functions/crop-anchor.html" $page */ -}}
+{{- $fp := "" -}}
+{{- with .Params.image }}{{ with .focal_point }}{{ $fp = lower . }}{{ end }}{{ end -}}
+{{- if not (in (slice "smart" "center" "top" "bottom" "left" "right" "topleft" "topright" "bottomleft" "bottomright") $fp) }}{{ $fp = "smart" }}{{ end -}}
+{{- return $fp -}}

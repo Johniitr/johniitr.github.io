@@ -3,7 +3,9 @@
 {{- $when := partial "functions/date-range.html" (dict "start" .Date "end" .Params.date_end) }}
 {{- $meta := printf `<span>%s</span><span>%s</span>` $when .Params.location }}
 {{- with .Params.event_url }}{{ $meta = printf `%s<span><a href="%s">%s</a></span>` $meta . $.Params.event }}{{ else }}{{ $meta = printf `%s<span>%s</span>` $meta .Params.event }}{{ end }}
-{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "Talk · %s" .Params.event) "lede" (.Params.summary | default "") "meta" ($meta | safeHTML)) }}
+{{- /* `event_type` in front matter (e.g. "Short course") replaces the default label "Talk".
+       (Not `kind` or `type`: Hugo reserves those names.) */}}
+{{ partial "masthead.html" (dict "page" . "eyebrow" (printf "%s · %s" (.Params.event_type | default "Talk") .Params.event) "lede" (.Params.summary | default "") "meta" ($meta | safeHTML)) }}
 {{ end }}
 {{ define "main" }}
 <div class="page"><div class="wrap layout-2">

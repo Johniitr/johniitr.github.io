@@ -4,7 +4,7 @@
 <div class="page"><div class="wrap"><ul class="list-items">
   {{- range .RegularPages.ByDate.Reverse }}
   <li class="item">
-    <div class="item__media">{{ with .Resources.GetMatch "featured.*" }}{{ $i := .Fill "420x315 smart webp q78" }}<img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy">{{ end }}</div>
+    <div class="item__media">{{ $pg := . }}{{ with .Resources.GetMatch "featured.*" }}{{ $i := .Fill (printf "420x315 %s webp q78" (partial "functions/crop-anchor.html" $pg)) }}<img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="" loading="lazy">{{ end }}</div>
     <div>
       <span class="mono">{{ partial "functions/date-range.html" (dict "start" .Date "end" .Params.date_end) }} · {{ .Params.location }}</span>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>

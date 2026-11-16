@@ -33,8 +33,7 @@ entries:
         url: "/blog/icimod-2026-permafrost-workshop/"
 
   - title: "Introducing GEOtop and GEOframe"
-    date: "2026-05-03"
-    date_end: "2026-05-08"
+    date: "2026-05-08" # the day of the course; same date as the talk page content/events/egu-2026
     location: "EGU General Assembly 2026, Vienna, Austria"
     role: "Convener"
     details: "A hands-on course on setting up open-source models ([GEOtop](https://github.com/geotopmodel/geotop), [GEOframe](https://github.com/geoframecomponents)) in snow-dominated catchments."

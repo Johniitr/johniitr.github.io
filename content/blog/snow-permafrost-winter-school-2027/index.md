@@ -13,6 +13,12 @@ tags:
 categories:
   - Teaching
 date: 2026-11-13
+
+# Cover (featured.jpg): designed banner. The caption links the EGU logo shown in it to egu.eu, as EGU asks.
+image:
+  alt: "Banner of the Snow–Permafrost Interactions winter school, Trento, February 2027, supported by the European Geosciences Union, with a sketch of summer and winter ground temperatures against depth beneath a snow cover."
+  caption: "Supported by the [European Geosciences Union (EGU)](https://www.egu.eu/). Design © 2026 John Mohd Wani."
+  focal_point: "Center" # a banner: crop evenly for cards and link previews, never zoom in
 ---
 
 We are delighted to announce the **Snow–Permafrost Interactions Winter School: Processes, Measurements, and
